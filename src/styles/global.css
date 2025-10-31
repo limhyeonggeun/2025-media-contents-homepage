@@ -1,0 +1,41 @@
+/* Paperlogy ExtraBold */
+@font-face {
+    font-family: 'Paperlogy';
+    font-weight: 800;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307@1.1/Paperlogy-ExtraBold.woff2')
+      format('woff2');
+    font-display: swap;
+  }
+  
+/* Paperlogy Medium */
+@font-face {
+    font-family: 'Paperlogy';
+    font-weight: 500;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307@1.1/Paperlogy-Medium.woff2')
+      format('woff2');
+    font-display: swap; 
+}
+  
+/* Noto Sans KR (Google Fonts CDN) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  
+
+/* 기본 셋팅 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 10px;
+}
+  
+body {
+    font-family: 'Paperlogy', 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #fff;
+}
