@@ -1,12 +1,13 @@
 import '../styles/Banner.css';
 import CaretDown from '../assets/svg/CaretDown.svg';
+import BannerVideo from '../assets/videos/main_bg.mp4'
 
 export default function Banner() {
   return (
     <section className="Banner">
       <video
         className="banner-video"
-        src="/assets/videos/banner.mp4"
+        src={BannerVideo}
         autoPlay
         loop
         muted
@@ -14,7 +15,7 @@ export default function Banner() {
       />
       <div className="banner-overlay">
         <div>
-          <h1 className="title">RE :</h1>
+          <h1 className="title">RE:</h1>
           <p className="subtitle-eng">2025 SWU MEDIA CONTENTS EXHIBITION</p>
           <p className="subtitle-kr">서원대학교 미디어콘텐츠학과 졸업전시회</p>
         </div>
