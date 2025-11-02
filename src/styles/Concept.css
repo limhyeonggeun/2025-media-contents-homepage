@@ -11,47 +11,54 @@
   left: 50%;
   transform: translateX(-50%);
   width: 196rem;
-  margin-top: 3.8rem;   
+  margin-top: 3.8rem;
 }
+
 .concept-line {
   width: 100%;
   height: auto;
   display: block;
 }
+
 .concept-line path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   transition: stroke-dashoffset 0.3s linear;
 }
 
-/* 선 */
+/* 세로 중심선 */
 .center-line {
-  position: relative;  
+  position: relative;
   display: block;
-  margin: 8rem auto 0;  
+  margin: 8rem auto 0;
   width: 0.15rem;
   height: 23.4rem;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--line-main);
 }
 
-/* 텍스트 */
+/* 텍스트 영역 */
 .concept-content {
   position: relative;
   z-index: 2;
   text-align: center;
 }
+
 .concept-title {
   font-family: 'Paperlogy', sans-serif;
   font-size: 10rem;
   line-height: 10rem;
   margin-top: 4.7rem;
+  font-weight: 800;
 }
+
+/* 아웃라인 / 채움 텍스트 */
 .concept-title .outline {
-  color: #000;
-  -webkit-text-stroke: 2.5px #fff;
+  color: var(--text-dark);
+  -webkit-text-stroke: 2.5px var(--text-primary);
 }
+
 .concept-title .fill {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 /* 이미지 오브젝트 */
@@ -61,11 +68,11 @@
   height: 44rem;
 }
 
-/* 주사위 */
+/* 주사위, 손 오브젝트 */
 .dice,
 .hand {
-  position: absolute;         
-  pointer-events: none;   
+  position: absolute;
+  pointer-events: none;
   transition: transform 0.4s ease-out, opacity 0.4s;
 }
 
@@ -86,17 +93,17 @@
   transform: translateX(-50%);
 }
 
-
 /* 설명 텍스트 */
 .concept-desc {
   text-align: center;
   margin-top: 6.5rem;
 }
+
 .concept-desc p {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 600;
   font-size: 4rem;
-  color: #fff;
+  color: var(--text-primary);
   display: inline-block;
   margin-bottom: 1.8rem;
   line-height: 5.8rem;

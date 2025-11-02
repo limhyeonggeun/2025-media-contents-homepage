@@ -1,5 +1,6 @@
 import '../styles/Header.css';
 import { useState } from 'react';
+import logo from "../assets/images/logo.png";
 
 export default function Header() {
   const [active, setActive] = useState('HOME');
@@ -15,7 +16,9 @@ export default function Header() {
   return (
     <header className="Header">
       <div className="header-inner">
-        <div className="logo">LOGO</div>
+        <div className="logo">
+          <img src={logo} alt="졸전로고" />
+        </div>
 
         <nav className="nav">
           {menuItems.map((item) => (

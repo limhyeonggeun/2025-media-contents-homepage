@@ -1,0 +1,116 @@
+.introduce {
+  position: relative;
+  width: 100%;
+  height: 225rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.introduce-header {
+  text-align: center;
+  margin-top: 17.2rem;
+  margin-bottom: 12.6rem;
+}
+
+.introduce-header-icon {
+  margin-bottom: 3.6rem;
+}
+
+.introduce-header-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.introduce-header-sub {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;    
+  color: var(--text-tertiary);
+}
+
+.introduce-content {
+  width: 128rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14rem;
+}
+
+.introduce-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.introduce-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.introduce-image {
+  flex: 1; 
+  height: 40rem; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 1.5rem;
+}
+
+.introduce-text {
+  flex: 1;
+  color: var(--text-primary);
+  margin-top: 3rem;
+}
+
+/* 소제목  */
+.introduce-label {
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  opacity: 0.8;
+  border: solid 1px var(--bg-light);
+  border-radius: 4rem;
+  padding: 0.6rem 1.4rem 0.7rem;
+  margin-bottom: 2.4rem;
+}
+
+/* 메인 제목  */
+.introduce-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 3.3rem;
+  color: var(--text-primary);
+  margin-bottom: 3.6rem;
+  line-height: 5rem;
+}
+
+.introduce-title span {
+  color: var(--accent-main);
+}
+
+/* 설명 */
+.introduce-desc {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: var(--text-tertiary);
+  line-height: 3.5rem;
+}
+
+
+/* 스크롤 등장 애니메이션 */
+.introduce-block {
+  opacity: 0;
+  transform: translateY(16rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.introduce-block.show {
+  opacity: 1;
+  transform: translateY(0);
+}

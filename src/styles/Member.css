@@ -1,0 +1,99 @@
+.member-section {
+  width: 100%;
+  height: 108rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+}
+
+/* 헤더 영역 */
+.member-header {
+  text-align: center;
+  margin-top: 8.5rem;
+  margin-bottom: 15rem;
+}
+
+.member-header-icon {
+  margin-bottom: 4rem;
+}
+
+.member-title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--text-primary);
+  margin-bottom: .6rem;
+}
+
+.member-subtitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: var(--text-tertiary);
+}
+
+/* 캐러셀 영역 */
+.member-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38rem;
+  margin: 0 auto;
+  perspective: 1800px;
+  transform-style: preserve-3d;
+  overflow: visible;
+}
+
+/* 카드 */
+.member-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+}
+
+.member-card.dimmed {
+  filter: brightness(0.5);
+}
+
+.member-card img {
+  width: 28rem;
+  height: 38rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+/* 카드 내부 텍스트 */
+.member-info {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+.member-info h3 {
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+}
+
+.member-info p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  background-color: var(--bg-dark);
+  padding: 0.6rem 2rem 0.9rem;
+  border-radius: 10rem;
+}
