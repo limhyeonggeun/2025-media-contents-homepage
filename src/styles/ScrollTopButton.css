@@ -45,3 +45,44 @@
     brightness(92%) contrast(90%);
 }
 
+.chatbot-btn {
+  position: fixed;
+  bottom: 12rem; 
+  right: 4rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+/* 스크롤 시 표시 */
+.chatbot-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 챗봇 아이콘 */
+.chatbot-btn .chatbot-img {
+  width: 4rem;
+  height: 4rem;
+  pointer-events: none;
+  transition: filter 0.3s ease;
+}
+
+/* hover 효과 */
+.chatbot-btn:hover {
+  background-color: var(--accent-main);
+}
+
