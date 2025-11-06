@@ -1,0 +1,41 @@
+.gallery-inner {
+  width: 128rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.row {
+  display: flex;
+  gap: 4rem;
+}
+
+.gallery-item {
+  background: #dcdcdc;
+}
+
+.gallery-item.small {
+  width: 40rem;
+  height: 40rem;
+}
+
+.gallery-item.medium {
+  width: 62rem;
+  height: 40rem;
+}
+
+.gallery-item.tall {
+  width: 40rem;
+  height: 84rem;
+}
+
+.gallery-item.wide {
+  width: 128rem;
+  height: 44rem;
+}
+
+.gallery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

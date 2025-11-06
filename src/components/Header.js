@@ -1,9 +1,11 @@
 import '../styles/Header.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from "../assets/images/logo.png";
 
 export default function Header() {
   const [active, setActive] = useState('HOME');
+  const navigate = useNavigate();
 
   const menuItems = [
     'HOME',
@@ -12,6 +14,17 @@ export default function Header() {
     'GALLERY',
     'GUEST BOOK',
   ];
+
+  const handleClick = (item) => {
+    setActive(item);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    if (item === 'HOME') navigate('/');
+    if (item === 'PROJECT') navigate('/project');
+    if (item === 'DEPARTMENT INFO') navigate('/department');
+    if (item === 'GALLERY') navigate('/gallery');
+    if (item === 'GUEST BOOK') navigate('/guestbook');
+  };
 
   return (
     <header className="Header">
@@ -25,7 +38,7 @@ export default function Header() {
             <span
               key={item}
               className={`nav-item ${active === item ? 'active' : ''}`}
-              onClick={() => setActive(item)}
+              onClick={() => handleClick(item)}
             >
               {item}
             </span>

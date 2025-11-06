@@ -1,0 +1,203 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  z-index: 999;
+}
+
+.modal-box {
+  width: 128rem;
+  height: 75rem;    
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #111;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-left {
+  width: 41rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 1.5rem;
+}
+
+.modal-header h2 {
+  font-family: 'Noto Sans KR';
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-main);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 41rem;
+}
+
+.modal-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; 
+  justify-content: center;
+}
+
+.contact-icon {
+  object-fit: contain;
+  display: block;
+}
+
+.modal-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.modal-main-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.modal-name {
+  font-family: 'paperlogy';
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.modal-role {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.modal-position {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.modal-about {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 2.2rem;
+  text-align: justify;        
+  text-justify: inter-word; 
+}
+
+.modal-contact {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  gap: 1rem;
+}
+
+.modal-panel-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  max-height: 65rem;
+}
+
+.modal-panel-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-right {
+  flex: 1;
+  display: flex;
+  padding: 2rem;
+}
+
+.modal-tab-buttons {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;         
+  margin-top: 1.5rem;
+}
+
+.modal-tab-buttons button {
+  flex: 1;             
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.4rem 0;
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: 0.2s;
+}
+
+.modal-tab-buttons button.active {
+  background: var(--accent-main);
+  color: #111;
+}
+
+.modal-right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.modal-video-wrap {
+  width: 100%;
+  height: 65rem;
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.empty-text {
+  color: #aaa;
+  font-size: 1.6rem;
+  text-align: center;
+}

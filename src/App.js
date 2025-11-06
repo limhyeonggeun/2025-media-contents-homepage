@@ -1,24 +1,24 @@
-import Header from './components/Header';
-import Banner from './components/Banner';
-import Concept from './components/Concept';
-import Poster from './components/Poster';
-import Member from './components/Member';
-import Introduce from './components/Introduce';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Project from "./pages/Project";
+import Gallery from "./pages/Gallery";
+import GuestBook from "./pages/GuestBook";
 import Footer from './components/Footer';
 import ScrollTopButton from "./components/ScrollTopButton";
-import './styles/global.css';
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Banner />
-      <Concept />
-      <Poster />
-      <Member />
-      <Introduce />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/gallery" element={<Gallery />} /> 
+        <Route path="/guestbook" element={<GuestBook />} />
+      </Routes>
       <Footer />
       <ScrollTopButton />
-    </>
+    </Router>
   );
 }

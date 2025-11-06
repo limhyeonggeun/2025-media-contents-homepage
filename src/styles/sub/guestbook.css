@@ -1,0 +1,83 @@
+.guestbook-titlebox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.guestbook-title {
+  font-family: 'Paperlogy';
+  font-weight: 900; 
+  font-size: 4.8rem; 
+  color: var(--text-primary);
+}
+
+.guestbook-btn a {
+  display: inline-block;
+  padding: 1.65rem 3.2rem; 
+  background: var(--bg-light); 
+  border-radius: 1rem;
+  font-family: 'Paperlogy';
+  font-weight: 600; 
+  font-size: 2rem;
+  color: var(--text-dark); 
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.guestbook-btn a:hover {
+  background: var(--accent-main);
+}
+
+.guestbook-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .guestbook-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .guestbook-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guestbook-card {
+  width: 40rem;
+  min-height: 40rem;
+  background: var(--bg-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guestbook-name {
+  font-family: 'Paperlogy';
+  font-weight: 700; 
+  font-size: 2.2rem;
+  color: var(--text-dark); 
+}
+
+.guestbook-to,
+.guestbook-from {
+  font-family: 'Paperlogy';
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--text-sub);
+}
+
+.guestbook-message {
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--text-sub);
+  line-height: 2.4rem;
+  flex: 1;
+  margin: 2.4rem 0;
+}

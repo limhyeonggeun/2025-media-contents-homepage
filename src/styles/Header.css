@@ -48,6 +48,7 @@
 }
 
 .nav-item.active {
+  color: var(--accent-main);
   font-weight: 700;
   opacity: 1;
 }

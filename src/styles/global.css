@@ -8,6 +8,22 @@
   font-display: swap;
 }
 
+/* Paperlogy Bold */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307@1.1/Paperlogy-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Paperlogy SemiBold */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 600;
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307@1.1/Paperlogy-SemiBold.woff2') format('woff2');
+  font-display: swap;
+}
+
 /* Paperlogy Medium */
 @font-face {
   font-family: 'Paperlogy';
@@ -26,6 +42,7 @@
   --text-primary: #ffffff;
   --text-secondary: #cccccc;
   --text-tertiary: #999999;
+  --text-sub: #4d4d4d;
   --text-dark: #000000;
 
   /* 배경 색상 */
@@ -33,7 +50,7 @@
   --bg-light: #ffffff;
 
   /* 포인트 색상 */
-  --accent-main: #2965B1;
+  --accent-main: #44FF00;
 
   /* 구분선 */
   --line-main: #E5E5E5;
@@ -57,4 +74,16 @@ body {
   -webkit-font-smoothing: antialiased;
   background: var(--bg-dark);
   color: var(--text-primary);
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-inner {
+  width: 128rem;
+  margin-top: 10rem;
+  padding: 8rem 0 14rem;
 }
