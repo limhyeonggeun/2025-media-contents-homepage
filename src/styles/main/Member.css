@@ -8,7 +8,6 @@
   gap: 4rem;
 }
 
-/* 헤더 영역 */
 .member-header {
   text-align: center;
   margin-top: 8.5rem;
@@ -34,7 +33,6 @@
   color: var(--text-tertiary);
 }
 
-/* 캐러셀 영역 */
 .member-carousel {
   position: relative;
   display: flex;
@@ -48,7 +46,6 @@
   overflow: visible;
 }
 
-/* 카드 */
 .member-card {
   position: absolute;
   top: 50%;
@@ -67,33 +64,70 @@
   border-radius: 1.5rem;
 }
 
-/* 카드 내부 텍스트 */
-.member-info {
-  position: absolute;
-  bottom: 1.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-}
+@media (max-width: 600px) {
+  .member-section {
+    height: auto;
+    padding-bottom: 4rem;
+    gap: 0;
+  }
 
-.member-info h3 {
-  font-family: 'Paperlogy', sans-serif;
-  font-weight: 800;
-  font-size: 2.2rem;
-  color: var(--text-dark);
-  margin-bottom: 0.8rem;
-}
+  .member-header {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 
-.member-info p {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: var(--text-primary);
-  background-color: var(--bg-dark);
-  padding: 0.6rem 2rem 0.9rem;
-  border-radius: 10rem;
+  .member-header-icon {
+    margin-bottom: 2rem;
+    width: 8rem;
+  }
+
+  .member-title {
+    font-size: 2.4rem;
+  }
+
+  .member-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .member-carousel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2rem;
+    padding: 1rem 2rem 2rem; /* ✅ 첫 카드 왼쪽 여백 */
+    scroll-snap-type: x mandatory;
+    perspective: none;
+  }
+
+  .member-carousel.mobile {
+    justify-content: flex-start;
+  }
+
+  .member-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .member-card.mobile {
+    position: relative;
+    flex: 0 0 auto;
+    width: 60%;
+    scroll-snap-align: start;
+  }
+
+  .member-card.mobile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  .member-card.mobile img:first-child {
+    margin-left: 2rem;
+  }
+
+  .member-card.mobile img:last-child {
+    margin-right: 2rem;
+  }
 }

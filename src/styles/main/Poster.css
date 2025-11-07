@@ -77,3 +77,60 @@
 .poster-footer>p {
     margin-bottom: 1.2rem;
 }
+
+/* ========================= 반응형 ========================= */
+@media (max-width: 600px) {
+
+  .poster {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .poster-inner {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .poster-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .poster-right {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .poster-title {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .poster-subtitle {
+    font-size: 1.6rem;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .pster-line {
+    margin-bottom: 2.4rem;
+  }
+
+  .poster-desc {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .poster-footer {
+    font-size: 1.2rem;
+  }
+
+  .poster-footer > p {
+    margin-bottom: 0.8rem;
+  }
+}

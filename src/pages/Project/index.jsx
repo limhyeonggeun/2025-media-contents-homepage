@@ -30,7 +30,7 @@ export default function Project() {
   const categoryMap = {
     Multimedia: ["Product Manager", "Developer", "Designer", "Marketer"],
     "Video Media": ["Video Producer", "3D Modeler", "Motion Graphic Designer"],
-    "Team Project": ["M-Team", "U300"],
+    "Team Project": ["U300", "M-Team"],
   };
 
   const normalize = (str) => str?.trim().toLowerCase();

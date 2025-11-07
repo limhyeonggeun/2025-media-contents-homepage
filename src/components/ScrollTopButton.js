@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/ScrollTopButton.css";
-import upArrow from "../assets/images/arrow-up.png";
+import { ReactComponent as ArrowUp } from "../assets/svg/arrow-up.svg";
 import chatIcon from "../assets/images/chatbot.png";
 
 export default function ScrollTopButton() {
@@ -19,12 +19,13 @@ export default function ScrollTopButton() {
   return (
     <>
       <button
-        className={`chatbot-btn ${visible ? "show" : ""}`}
+        className={`chatbot-btn ${visible ? "move-up" : ""}`}
         onClick={toggleChat}
         aria-label="챗봇 열기"
       >
         <img src={chatIcon} alt="챗봇 아이콘" className="chatbot-img" />
       </button>
+
       {showChat && (
         <div className="chatbot-popup">
           <div className="chatbot-header">
@@ -38,12 +39,13 @@ export default function ScrollTopButton() {
           ></iframe>
         </div>
       )}
+
       <button
         className={`scroll-top-btn ${visible ? "show" : ""}`}
         onClick={scrollToTop}
         aria-label="맨 위로 이동"
       >
-        <img src={upArrow} alt="맨 위로" className="arrow-img" />
+        <ArrowUp className="arrow-img" />
       </button>
     </>
   );

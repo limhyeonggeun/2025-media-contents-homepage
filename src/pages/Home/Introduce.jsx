@@ -1,11 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import "../../styles/main/Introduce.css";
 import introduceicon from "../../assets/images/megaphone.png";
+import introduceImg1 from "../../assets/images/introduce1.png";
+import introduceImg2 from "../../assets/images/introduce2.png";
+import introduceImg3 from "../../assets/images/introduce3.png";
 
 export default function Introduce() {
   const lastScrollY = useRef(window.scrollY);
   const scrollDir = useRef("down");
-  const threshold = 5; 
+  const threshold = 5;
 
   useEffect(() => {
     let ticking = false;
@@ -69,8 +72,9 @@ export default function Introduce() {
       </div>
 
       <div className="introduce-content">
+
         <div className="introduce-block">
-          <div className="introduce-image"></div>
+          <img src={introduceImg1} alt="학부 소개 이미지" className="introduce-image" />
           <div className="introduce-text">
             <p className="introduce-label">학부 소개</p>
             <h3 className="introduce-title">
@@ -86,7 +90,7 @@ export default function Introduce() {
         </div>
 
         <div className="introduce-block reverse">
-          <div className="introduce-image"></div>
+          <img src={introduceImg2} alt="멀티미디어 전공 이미지" className="introduce-image" />
           <div className="introduce-text">
             <p className="introduce-label">멀티미디어 전공</p>
             <h3 className="introduce-title">
@@ -102,7 +106,7 @@ export default function Introduce() {
         </div>
 
         <div className="introduce-block">
-          <div className="introduce-image"></div>
+          <img src={introduceImg3} alt="영상미디어 전공 이미지" className="introduce-image" />
           <div className="introduce-text">
             <p className="introduce-label">영상미디어 전공</p>
             <h3 className="introduce-title">
@@ -116,6 +120,7 @@ export default function Introduce() {
             </p>
           </div>
         </div>
+
       </div>
     </section>
   );

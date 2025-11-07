@@ -11,30 +11,37 @@ export default function Concept() {
   useEffect(() => {
     const svgEl = svgRef.current;
     if (!svgEl) return;
-
+  
     const path = svgEl.querySelector('path');
     if (!path) return;
-
+  
     const length = path.getTotalLength();
     path.style.strokeDasharray = `${length}`;
-    path.style.strokeDashoffset = `${length}`;
-
+    path.style.strokeDashoffset = `${length}`; 
+    path.style.transition = "stroke-dashoffset 0.3s linear";
+  
     const handleScroll = () => {
       const rect = svgEl.getBoundingClientRect();
       const windowHeight = window.innerHeight;
+  
       const start = windowHeight * 0.1;
       const end = windowHeight * 0.9;
-      const progress = Math.min(1, Math.max(0, (windowHeight - rect.top - start) / (end - start)));
+  
+      const progress = Math.min(
+        1,
+        Math.max(0, (windowHeight - rect.top - start) / (end - start))
+      );
+  
+      if (window.scrollY === 0) {
+        path.style.strokeDashoffset = `${length}`;
+        return;
+      }
+
       path.style.strokeDashoffset = `${(1 - progress) * length}`;
     };
-
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
-    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -62,9 +69,9 @@ export default function Concept() {
         </div>
 
         <div className="concept-desc">
-          <p>가나다라마바사아자차카타파하</p><br></br>
-          <p>가나다라마바사아자차카타파하하하하하하하하</p><br></br>
-          <p>가나다라마바사아자차카타파하</p>
+          <p>"각자의 시선으로 다시쓰는 이야기"</p><br></br>
+          <p>서로 다른 경험이 모여, 하나의 이야기가 되고</p><br></br>
+          <p>그 안에서 우리는 또 한 번의 삶을 써 내려간다.</p>
         </div>
       </div>
     </section>

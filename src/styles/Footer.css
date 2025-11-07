@@ -60,3 +60,61 @@
 .footer-logo img {
   margin-top: 6.4rem;
 }
+
+@media (max-width: 600px) {
+  .footer {
+    height: auto;
+    padding: 3rem 0;
+    position: relative;
+  }
+
+  .footer-inner {
+    width: 100%;
+    padding: 0 2rem;  
+    display: block;        
+  }
+
+  .footer-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .footer-title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .footer-info-box {
+    gap: 1.2rem;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .footer-label {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .footer-desc {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    word-break: keep-all;
+  }
+
+  .footer-logo {
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
+  }
+
+  .footer-logo img {
+    margin-top: 0;
+    width: 6rem;
+    height: auto;
+  }
+}

@@ -96,8 +96,8 @@ export const members = [
         intro: "https://www.youtube.com/embed/yyyyy",        
       },
     
-      about: "다양한 카테고리와 방대한 상품정보로 인해 사용자가 원하는 정보를 한눈에 파악하기 어려운 한계가 존재, 이에따라 사용자가 더쉽고 직관적으로 앱을 탐색할 수 있는 환경을 제공하고자 합니다. 특히 단순하고 명확한 UX를 중심으로 한 화면 구성, 그리고 빠른검색과 구매가 가능한 플로우구축을 제안합니다.",
-      phone: "전화번호 추가해야함",
+      about: "다양한 카테고리와 방대한 상품정보로 인해 사용자가 원하는 정보를 한눈에 파악하기 어려운 한계가 존재, 이에따라 사용자가 더쉽고 직관적으로 앱을 탐색할수 있는 환경을 제공하고자 합니다. 맞춤형 추천 등의 기능을 강화해 사용자 제공 특히 단순하고 명확한 UX를 중심으로한 화면 구성, 그리고 빠른검색과 구매 가 가능한 플로우구축을 제안합니다.",
+      phone: "010-6844-4750",
       email: "rlaeunseo@kakao.com",
     },
 
@@ -289,7 +289,7 @@ export const members = [
       images: {
         product: "productmanager/choieunbin/product-img.png",
         profile: "productmanager/choieunbin/profile-img.png",
-        panel: "productmanager/choieunbin/panel-img.jpg",
+        panel: "productmanager/choieunbin/panel-img.jpeg",
       },
     
       links: {
@@ -457,6 +457,49 @@ export const members = [
       email: "lhg010115@kakao.com",
     },
 
+    {
+      id: "dev-03",
+      category: "Developer",
+      major: "Multimedia",
+    
+      name: "유현빈, 이기원",
+      role: "Gun & Fire",
+      position: "락온",
+    
+      images: {
+        product: "developer/lockon/product-img.png",
+        profile: "developer/lockon/profile-img.png",
+        panel: "developer/lockon/panel-img.jpg",
+      },
+    
+      members: [
+        {
+          key: "hyunbin",
+          name: "유현빈",
+          position: "게임 개발자",
+          phone: "010-8993-0728",
+          email: "dndb0728@gmail.com",
+          profile: "developer/lockon/profile-hyunbin.png",
+          intro: "https://www.youtube.com/embed/YYYYY"
+        },
+        {
+          key: "giwon",
+          name: "이기원",
+          position: "게임 개발자",
+          phone: "010-2200-2833",
+          email: "shion9910@naver.com",
+          profile: "developer/lockon/profile-giwon.png",
+          intro: "https://www.youtube.com/embed/ZZZZZ"
+        }
+      ],
+  
+      about:
+        "‘Gun & Fire’는 단순한 조작을 활용한 플레이어의 전략 및 반사신경을 끊임없이 몰려오는 적들로 하여금 시험하는 슈팅 액션 캐쥬얼 게임으로 다양한 아이템과 무기, 시련을 헤쳐나가면서 올라가는 점수, 적들의 공격을 통한 긴장감 이 세가지 요소로 플레이어에게 도전욕구를 자극하는 게임을 제안합니다.",
+  
+      phone: "010-8993-0728",
+      email: "dndb0728@gmail.com",
+    },
+
     // 디자이너
     {
       id: "des-01",
@@ -588,9 +631,9 @@ export const members = [
       },
   
       about:
-        "틱톡 블루오션에이전시는 브랜드 마케팅, 크리에이터 매칭, 콘텐츠 운영을 하나로 통합한 스마트 인플루언서 관리 플랫폼입니다. 실시간 성과 모니터링과 AI 기반 트렌드 분석을 통해 광고 효율과 콘텐츠 경쟁력을 높이며, 관리자 중심의 통합 관리 기능으로 캠페인 운영의 효율성과 사용자 만족도를 극대화합니다. 당사는 이러한 데이터 기반 운영 체계를 통해 틱톡 생태계 내 브랜드-크리에이터 상생 모델을 구현하고자 합니다.",
+        "틱톡 블루오션에이전시는 브랜드 마케팅, 크리에이터 매칭, 콘텐츠 운영을 통합한 스마트 인플루언서 관리 플랫폼입니다. 실시간 성과 모니터링과 AI 트렌드 분석으로 광고 효율과 콘텐츠 경쟁력을 높이고, 관리자 중심 통합 관리로 캠페인 효율성과 만족도를 극대화합니다. 데이터 기반 운영으로 틱톡 생태계 내 브랜드-크리에이터 상생 모델을 구현하고자 합니다.",
   
-      phone: "전화번호 받아야함",
+      phone: "010-8011-5690",
       email: "wpgns0311@naver.com",
     },
 
@@ -670,9 +713,9 @@ export const members = [
       },
   
       about:
-        "‘하루상식’은 낭비되기 쉬운 1분을 가장 가치 있는 시간으로 만드는 교육 숏폼 콘텐츠로, 매일 새로운 주제로 복잡한 지식, 생활 상식 등을 정보 압축을 통해 바쁜 현대인에게 가장 효율적인 지식 습득 경험을 제공하는 새로운 상식 콘텐츠를 제안합니다.",
+        "'하루상식'은 자극적인 콘텐츠 속에서 낭비되기 쉬운 1분을 가장 가치 있는 시간으로 바꾸는 교육 숏폼 콘텐츠로, 매일 새로운 주제로 복잡한 지식, 생활 상식 등을 단순 나열이 아닌 핵심 압축을 통해 전달합니다. 직관적인 시각화와 친근한 톤앤매너를 통해 이해하기 쉬우면서도 가장 효율적인 지식 습득 경험을 제공하는 새로운 상식 콘첸츠를 제안합니다.",
   
-      phone: "전화번호 받아야함",
+      phone: "010-5439-0938",
       email: "ohk930@gmail.com",
     },
 
@@ -753,7 +796,7 @@ export const members = [
       about:
         "빠르게 소비되는 영상 시대, 사람들은 이야기의 여운을 잃어가고 있습니다. TELLA는 잊혀진 ‘문장 하나의 감정’을 다시 꺼내, AI를  활용하여 그것을 시각적 경험으로 번역하는 프로젝트입니다. 한 문장이 한 장면이 되고, 감정이 영상이 되는 순간, TELLA는 그 사이의 다리가 되어 책에 대한 또다른 접근으로 다가서길 제안합니다.",
   
-      phone: "전화번호 받아야함",
+      phone: "010-6545-2759",
       email: "wnsghd0128@naver.com",
     },
 
@@ -778,9 +821,9 @@ export const members = [
       },
   
       about:
-        "네이버페이 광고는 생활 속 루틴의 완성을 핵심 주제로, 단순 결제 수단을 넘어 똑똑한 소비 플랫폼으로 이 캠페인은 사용자 노력 없이도 즉시 보상, 행동 최소화, 절약액 가시화의 세 원칙을 통해 반복 사용을 유도하며, 궁극적으로 네이버페이는 쇼핑·예약·콘텐츠를 아우르는 생활형 혜택 허브로 인식 전환을 목표로 쓰는 순간 이익이 되는 경험을 완성하여 사용자 충성도를 끌어올리고자 제안합니다.",
+        "네이버페이 광고는 '생활 속 루틴 완성'을 핵심 주제로, 스마트 소비 플랫폼으로 자리하고자 합니다. 캠페인은 노력 없이도 즉시 보상, 행동 최소화, 절약액 가시화로 반복 사용을 유도하며 , 혜택 허브로 인식 전환 및 충성도 강화를 제안합니다.",
   
-      phone: "전화번호 받아야함",
+      phone: "010-5059-3842",
       email: "fjadyvwh44@gmail.com",
     },
 
@@ -805,7 +848,7 @@ export const members = [
       },
   
       about:
-        "개별 게임 중심의 홍보는 브랜드 메시지의 일관성을 약화시키고, 플레이어 경험을 단편적으로 만듭니다. 이에 KRAFTON의 다양한 IP를 감정 서사로 통합해 기술이 아닌 감정 중심의 브랜드로 확장하며, 각 게임의 몰입을 하나의 리듬으로 연결한 통합형 시네마틱 포맷을 제안합니다. 이를 통해 브랜드의 정체성을 강화하고, 모든 IP가 하나의 감정 세계로 이어지는 일관된 브랜드 경험을 완성합니다.",
+        "개별 게임 중심의 홍보는 브랜드 메시지의 일관성을 약화시키고, 플레이어 경험을 단편적으로 만듭니다. 이에 KRAFTON의 다양한 IP를 감정 서사로 통합해 기술이 아닌 감정 중심의 브랜드로 확장하며, 각 게임의 몰입을 하나의 리듬으로 연결한 통합형 시네마틱 포맷을 제안합니다. 이를 통해 브랜드 정체성을 강화하고, 모든 IP가 하나의 감정 세계로 이어지는 경험을 완성합니다.",
   
       phone: "010-4692-7541",
       email: "whdydtjr784@gmail.com",
@@ -914,9 +957,9 @@ export const members = [
       },
   
       about:
-        "에이리언 프로젝트는 폐쇄된 우주 정거장을 배경으로, 미지의 생명체 흔적을 탐사하는 과정을 다룬 SF 콘텐츠입니다. 본 프로젝트는 금속 구조물과 적막한 공간 연출을 통해 고립된 공포와 탐사의 긴장감을 시각적으로 구현하고, 사실적 모델링과 조명 연출로 우주 정거장 속 생명체의 흔적을 표현합니다. 공포와 호기심이 교차하는 서사를 바탕으로, 시각적 완성도와 몰입감을 극대화한 SF 비주얼 경험을 제안합니다.",
+        "에이리언 프로젝트는 폐쇄된 우주 정거장을 배경으로 미지의 생명체 흔적을 탐사하는 과정을 다룬 프로젝트입니다. 금속 구조물과 적막한 공간 연출로 고립된 공포와 탐사의 긴장감을 시각적으로 구현하고, 사실적 모델링과 조명 연출로 생명체의 흔적을 표현합니다. 공포와 호기심이 교차하는 서사를 바탕으로 시각적 완성도와 몰입감을 극대화한 경험을 제안합니다.",
   
-      phone: "전화번호 받아야함",
+      phone: "010-6489-2244",
       email: "sycs903@gmail.com",
     },
 
@@ -973,5 +1016,337 @@ export const members = [
   
       phone: "010-5393-9395 ",
       email: "csb9395@naver.com",
+    },
+
+    // U300
+    {
+      id: "u300-01",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "아스트",
+      role: "VR을 활용한 외국인 K-푸드 체험 서비스",
+      position: "김현정, 임형근, 허선범, 김진우, 황재하",
+  
+      images: {
+        product: "u300/1/product-img.png",
+        profile: "u300/1/profile-img.png",
+        panel: "u300/1/panel-img.jpg",
+      },
+  
+      about:
+        "전 세계적으로 K-푸드의 인기가 높아지고 있지만, 외국인들이 한국 음식을 직접 체험할 기회는 여전히 부족합니다. 특히 해외 거주자는 식재료나 시설의 한계로 인해 실제 체험이 어렵고, 정보 접근 또한 제한적입니다. 이러한 문제를 해결하기 위해 일상 속에서 손쉽게 한국 음식 문화를 경험할 수 있는 체험형 서비스 시스템을 제안합니다.",
+  
+      phone: "010-9309-2066",
+      email: "mary3033@naver.com",
+    },
+
+    {
+      id: "u300-02",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "뉴월드",
+      role: "새터민 사회적 참여를 위한\n바리스타 직업 가상 체험제작",
+      position: "이아연 ,김도희, 이지수, 임성준, 최수빈",
+  
+      images: {
+        product: "u300/2/product-img.png",
+        profile: "u300/2/profile-img.png",
+        panel: "u300/2/panel-img.jpg",
+      },
+  
+      about:
+        "새터민은 경력 부족과 교육비 부담, 오프라인 실습의 한계로 구직에 어려움을 겪습니다. 이에 '뉴월드'는 남한 내 수요가 높은 바리스타 직무를 XR(확장 현실) 기반으로 교육하는 서비스를 개발해, 이들의 직무 역량을 높이고 시공간 제약 없는 기회를 제공할 것을 제안합니다.",
+  
+      phone: "010-7797-5954",
+      email: "ayeon4157@kakao.com",
+    },
+
+    {
+      id: "u300-03",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "MediCheck",
+      role: "젊은 세대가 XR을 통해 시니어의 삶을 체험하며\n 노후 준비의 중요성을 공감하는 서비스",
+      position: "구본희, 노민지, 박수진, 박현주, 이현정",
+  
+      images: {
+        product: "u300/3/product-img.png",
+        profile: "u300/3/profile-img.png",
+        panel: "u300/3/panel-img.jpg",
+      },
+  
+      about:
+        "현대사회는 고령화와 정신적 건강 악화, 웰빙 트렌드 확산으로 신체·정신 회복을 위한 체험형 서비스의 필요성이 커지고 있습니다. 세대 간 교류를 통한 심리 안정과 신체 회복이 새로운 복지 가치로 부상하고 있습니다. 이에 본 프로젝트는 기술과 체험을 결합한 맞춤형 웰니스 솔루션으로 세대가 공감할 수 있는 인간 중심의 건강 경험을 제안합니다.",
+  
+      phone: "010-3608-7855",
+      email: "bons011207@naver.com",
+    },
+
+    {
+      id: "u300-04",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "안전제일",
+      role: "어린이를 위한 가상 현실 (VR) 안전 교육 시뮬레이터",
+      position: "김성일, 김수민, 박원빈, 박세웅, 최은빈",
+  
+      images: {
+        product: "u300/4/product-img.png",
+        profile: "u300/4/profile-img.png",
+        panel: "u300/4/panel-img.jpg",
+      },
+  
+      about:
+        "최근 VR 기술의 눈부신 발전은 교육 분야에 새로운 가능성을 보여주고 있습니다. 특히, 어린이들의 안전 교육 분야에서는 VR 기술을 활용한 교육 방법이 점점 느는 추세이고, 기존의 이론 중심의 안전 교육은 아이들의 흥미를 유발하고 오랫동안 기억하기 어려운 한계를 가지고 있기 때문에 직접 체험하고, 안전 수칙을 익힐 수 있는 시뮬레이터 개발을 제안합니다.",
+  
+      phone: "010-7103-2927",
+      email: "rlatjd0303@naver.com",
+    },
+
+    {
+      id: "u300-05",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "FrenchFries",
+      role: "VR 기반 외국인의 언어 적응과 문화 이해를\n 돕는 체험형 한국어 학습 서비스",
+      position: "고성준, 김준홍, 유현빈, 이인준, 최혁주",
+  
+      images: {
+        product: "u300/5/product-img.png",
+        profile: "u300/5/profile-img.png",
+        panel: "u300/5/panel-img.jpg",
+      },
+  
+      about:
+        "글로벌 시대에 한국을 찾는 외국인의 수는 꾸준히 증가하고 있지만, 실제 생활 속에서 한국어를 사용하는 데에는 여전히 어려움이 존재합니다. 특히 편의점이나 버스 등 일상적 상황에서는 언어적 실수에 대한 두려움과 낯선 환경이 학습의 장벽이 됩니다. 이에 VR 환경을 활용해 실생활 한국어를 자연스럽게 익히는 체험형 학습 서비스를 제안합니다.",
+  
+      phone: "010-7942-6502",
+      email: "injoon0526@kakao.com",
+    },
+
+    {
+      id: "u300-06",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "에헷콩",
+      role: "XR/AR을 활용한 몰입형여행 네비게이션 서비스",
+      position: "김현지, 김미경, 육서영",
+  
+      images: {
+        product: "u300/6/product-img.png",
+        profile: "u300/6/profile-img.png",
+        panel: "u300/6/panel-img.jpg",
+      },
+  
+      about:
+        "휠체어 사용자 등 이동 약자를 위한 맞춤형 정보 제공과 여행지 사전 체험이 가능한 XR/AR 기반 몰입형 네비게이션 서비스 구현을 목표로 합니다. 기존 네비게이션은 이동 약자의 특수한 이동조건을 충분히 반영하지 못해 불편과 위험이 지속되고 있고, 이를 개선하기 위해 맞춤형 동선 안내와 사전 여행 체험이 가능한 네비게이션 서비스를 제안합니다.",
+  
+      phone: "010-3982-2479",
+      email: "gimj88759@kakao.com",
+    },
+
+    {
+      id: "u300-07",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "스테어스",
+      role: "청각장애인XR직업체험솔루션",
+      position: "이지혁, 추강현, 백웅빈, 강지헌, 이기원",
+  
+      images: {
+        product: "u300/7/product-img.png",
+        profile: "u300/7/profile-img.png",
+        panel: "u300/7/panel-img.jpg",
+      },
+  
+      about:
+        "청각장애인을 위한 XR 기반 직무체험 솔루션을 제안합니다. 본 솔루션은 VR 환경에서 시각 중심의 직무훈련 콘텐츠를 제공하며, 자막·아이콘·애니메이션 등을 통해 정보 접근성과 몰입도를 높입니다. 사용자의 훈련 이력을 기반으로 개인 맞춤형 콘텐츠를 추천하고, 결과 분석을 통해 취업 연계까지 가능한 실용적 교육 시스템입니다.",
+  
+      phone: "010-4967-4220",
+      email: "dlwlgur15@kakao.com",
+    },
+
+    {
+      id: "u300-08",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "트리오",
+      role: "다문화 가정을 위한 가상현실 한국문화체험 서비스",
+      position: "문태환, 진천규, 오제훈",
+  
+      images: {
+        product: "u300/8/product-img.png",
+        profile: "u300/8/profile-img.png",
+        panel: "u300/8/panel-img.jpg",
+      },
+  
+      about:
+        "VR 전통문화체험 서비스는 한복을 직접 보고 움직이며 체험할 수 있는 몰입형 콘텐츠로, 사용자가 한복의 형태·색·착용 방식을 자연스럽게 이해하도록 돕습니다. 또한 체험 후 다문화가족지원센터 등과 연계해 실제 한복체험 행사로 이어지는 온·오프라인 연계 구조를 통해 지속적 참여와 문화 공감 확산을 목표로 제안합니다.",
+  
+      phone: "010-9292-4732",
+      email: "xoghksehdsp@kakao.com",
+    },
+
+    {
+      id: "u300-09",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "브릿지",
+      role: "저소득층 아동을 위한\n실감형 3D 교육 콘텐츠 서비스 기획",
+      position: "신수영, 곽민지, 유회창, 김지현",
+  
+      images: {
+        product: "u300/9/product-img.png",
+        profile: "u300/9/profile-img.png",
+        panel: "u300/9/panel-img.jpg",
+      },
+  
+      about:
+        "제안 내용은 경제적 제약과 디지털 격차로 학습 기회를 제한받는 아동을 위해, VR 기반 실감형 3D 콘텐츠를 활용한 학습 서비스를 제안합니다. 아동이 가상공간에서 주제를 직접 체험하며 능동적으로 학습하도록 설계해 교육 참여와 흥미를 높이고, 평등한 학습 환경을 조성하고자 합니다.",
+  
+      phone: "010-8318-3900",
+      email: "notablyf@naver.com",
+    },
+
+    {
+      id: "u300-10",
+      category: "U300",
+      major: "Team Project",
+  
+      name: "형광팬",
+      role: "교통약자 이동지원 호출 시스템",
+      position: "김은서, 조용석, 이유찬, 최현아",
+  
+      images: {
+        product: "u300/10/product-img.jpeg",
+        profile: "u300/10/profile-img.png",
+        panel: "u300/10/panel-img.jpg",
+      },
+  
+      about:
+        "교통약자와 고령자를 위한 실시간 호출·VR 시뮬레이션 기반 스마트 이동지원 플랫폼 구축을 목표로, 기술과 배려가 공존하는 포용적 교통 환경을 구현. 사용자는 가상공간에서 이동을 직관적으로 체험하고, 운영자는 데이터로 효율을 개선해 공공 서비스의 디지털 전환과 이동권 보장을 함께 실현할 것을 제안합니다.",
+  
+      phone: "010-6844-4750",
+      email: "rlaeunseo@kakao.com",
+    },
+
+    //멀티 팀플
+    {
+      id: "mt-1",
+      category: "M-Team",
+      major: "Team Project",
+  
+      name: "아스트",
+      role: "스마트 주거 환경 통합관리 서비스",
+      position: "황재하,김진우,김현정,허선범,임형근",
+  
+      images: {
+        product: "mt/1/product-img.png",
+        profile: "mt/1/profile-img.png",
+        panel: "mt/1/panel-img.jpg",
+      },
+  
+      about:
+        "주거 공간은 단순 거주를 넘어, 사용자가 직접 제어·관리하는 데이터 기반 생활 플랫폼으로 전환 중입니다. 이에 아이파크는 맞춤 제어와 생활 자동화를 아우르고, 입주부터 일상 관리까지 끊김 없는 경험을 제공하는 스마트 허브로 진화합니다. 결과적으로 사용자는 효율과 신뢰를 갖춘 프리미엄 여정과 체계적 관리를 자연스럽게 누리는 스마트 주거를 제안합니다.",
+  
+      phone: "010-6430-0607",
+      email: "ys010607@kakao.com",
+    },
+
+    {
+      id: "mt-2",
+      category: "M-Team",
+      major: "Team Project",
+  
+      name: "안전계단",
+      role: "운전자 중심의 시선·집중도 기반\n아반떼 인포테이먼트 서비스",
+      position: "김수민, 박원빈, 이지혁, 최은빈, 추강현",
+  
+      images: {
+        product: "mt/2/product-img.png",
+        profile: "mt/2/profile-img.png",
+        panel: "mt/2/panel-img.jpg",
+      },
+  
+      about:
+        "현대차 인포테인먼트는 기능 중심 설계로 운전 중 인지·조작성이 낮고, OTA·AI·AR 연동도 부족해 경험 향상에 한계가 있다. 통합 UI·시선 UX로 안전성과 편의성을 높이고, 데이터 기반 클라우드 OTA로 지속 업데이트되는 운전자 중심 플랫폼을 제안합니다.",
+  
+      phone: "010-5594-4585",
+      email: "dnjsqls0620@kakao.com",
+    },
+
+    {
+      id: "mt-3",
+      category: "M-Team",
+      major: "Team Project",
+  
+      name: "미녀와 야수",
+      role: "고려대학교 안암병원 베리어프리 키오스크",
+      position: "구본희, 노민지, 박수진, 박현주, 이현정",
+  
+      images: {
+        product: "mt/3/product-img.png",
+        profile: "mt/3/profile-img.png",
+        panel: "mt/3/panel-img.jpg",
+      },
+  
+      about:
+        "현대 대학병원은 복잡한 진료 절차와 다양한 환자층으로 인해 사용자가 동선을 이해하고 정보를 파악하기 어렵습니다. 기존 키오스크는 접수와 대기 안내에 집중해 효율을 높였지만, 전체 여정 파악과 인지 부담 완화에는 한계가 있습니다. 이에 본 프로젝트는 행동과 인지 흐름을 기반으로, 자연스럽고 직관적인 진료 경험을 제공하는 차세대 키오스크 환경을 제안합니다.",
+  
+      phone: "010-3608-7855",
+      email: "bons011207@naver.com",
+    },
+
+    {
+      id: "mt-4",
+      category: "M-Team",
+      major: "Team Project",
+  
+      name: "모노리브",
+      role: "관람객의 여정 전반을 연결하는\n사용자 중심의 스마트 키오스크",
+      position: "최혁주, 이아연, 이지수, 이인준, 유현빈",
+  
+      images: {
+        product: "mt/4/product-img.png",
+        profile: "mt/4/profile-img.png",
+        panel: "mt/4/panel-img.jpg",
+      },
+  
+      about:
+        "국립중앙박물관은 해마다 방문객이 증가하며 대표 문화공간으로 자리 잡았으나, 기존 키오스크는 노후화된 시스템과 제한된 기능으로 관람객의 다양한 요구를 충족하기 어렵습니다. 특히 외국인·고령자·장애인을 위한 접근성과 정보 제공의 한계가 두드러집니다. 이에 실시간 안내 등 스마트 전시 서비스를 제안합니다.",
+  
+      phone: "010-6387-2473",
+      email: "gurwn0904@naver.com",
+    },
+
+    {
+      id: "mt-5",
+      category: "M-Team",
+      major: "Team Project",
+  
+      name: "문방구",
+      role: "롯데백화점 키오스크 제안서",
+      position: "문태환, 곽민지, 신수영",
+  
+      images: {
+        product: "mt/5/product-img.png",
+        profile: "mt/5/profile-img.png",
+        panel: "mt/5/panel-img.jpg",
+      },
+  
+      about:
+        "기존의 백화점 키오스크가 단순한 정보 제공 중심이었다면, 새로운 롯데백화점 키오스크는 ‘고객 중심의 스마트 경험 플랫폼’으로 진화합니다. 키오스크와 APP을 유기적으로 연동함으로써분산된 정보 구조와 복잡한 동선을 단순화하고, 사용자의 실제 이용 맥락에 따라 자연스럽게 반응하는차세대 통합형 백화점 키오스크를 제안합니다.",
+  
+      phone: "010-9292-4732",
+      email: "xoghksehdsp@kakao.com",
     },
   ];

@@ -4,7 +4,6 @@
   height: 135rem;
 }
 
-/* 라인 */
 .concept-line-wrap {
   position: absolute;
   top: 0;
@@ -26,7 +25,6 @@
   transition: stroke-dashoffset 0.3s linear;
 }
 
-/* 세로 중심선 */
 .center-line {
   position: relative;
   display: block;
@@ -36,7 +34,6 @@
   background: var(--line-main);
 }
 
-/* 텍스트 영역 */
 .concept-content {
   position: relative;
   z-index: 2;
@@ -51,7 +48,6 @@
   font-weight: 800;
 }
 
-/* 아웃라인 / 채움 텍스트 */
 .concept-title .outline {
   color: var(--text-dark);
   -webkit-text-stroke: 2.5px var(--text-primary);
@@ -61,14 +57,12 @@
   color: var(--text-primary);
 }
 
-/* 이미지 오브젝트 */
 .concept-objects {
   position: relative;
   width: 100%;
   height: 44rem;
 }
 
-/* 주사위, 손 오브젝트 */
 .dice,
 .hand {
   position: absolute;
@@ -76,7 +70,6 @@
   transition: transform 0.4s ease-out, opacity 0.4s;
 }
 
-/* 위치 조정 */
 .dice1 {
   left: 34%;
   top: -30%;
@@ -93,7 +86,6 @@
   transform: translateX(-50%);
 }
 
-/* 설명 텍스트 */
 .concept-desc {
   text-align: center;
   margin-top: 6.5rem;
@@ -107,4 +99,58 @@
   display: inline-block;
   margin-bottom: 1.8rem;
   line-height: 5.8rem;
+}
+
+
+@media (max-width: 600px) {
+  .concept {
+    height: 60rem;
+  }
+
+  .concept-line {
+    margin-top: 4rem;
+  }
+
+  .concept-line-wrap {
+    width: 100%;
+    max-width: 100rem;
+    margin-top: 2rem;
+  }
+
+  .concept-title {
+    font-size: 4.6rem;
+    line-height: 5rem;
+  }
+
+  .center-line {
+    height: 4rem;
+    margin-top: 5rem;
+}
+
+  .concept-objects {
+    height: 12rem;
+  }
+
+  .dice1 {
+    left: 20%;
+    top: -18%;
+    width: 5rem;
+  }
+
+  .dice2 {
+    left: 68%;
+    top: -84%;
+    width: 5rem;
+  }
+
+  .hand {
+    width: 15rem;
+    top: 10%;
+  }
+
+  .concept-desc p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1.2rem;
+  }
 }
