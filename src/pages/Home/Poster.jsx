@@ -1,5 +1,5 @@
 import '../../styles/main/Poster.css';
-import posterImg from '../../assets/images/poster.png';
+import posterImg from '../../assets/images/poster.jpg';
 
 export default function Poster() {
   return (

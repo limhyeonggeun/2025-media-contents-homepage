@@ -12,12 +12,27 @@ export default function Header() {
 
   useEffect(() => {
     const path = location.pathname;
-
-    if (path === "/") setActive("HOME");
-    if (path === "/project") setActive("PROJECT");
-    if (path === "/department") setActive("DEPARTMENT INFO");
-    if (path === "/gallery") setActive("GALLERY");
-    if (path === "/guestbook") setActive("GUEST BOOK");
+    if (
+      path === '/' ||
+      path === '/s202011341/2025' ||
+      path === '/s202011341/2025/'
+    ) {
+      setActive('HOME');
+    }
+  
+    else if (path === '/project') {
+      setActive('PROJECT');
+    } 
+    else if (path === '/department') {
+      setActive('DEPARTMENT INFO');
+    } 
+    else if (path === '/gallery') {
+      setActive('GALLERY');
+    } 
+    else if (path === '/guestbook') {
+      setActive('GUEST BOOK');
+    }
+  
   }, [location.pathname]);
 
   const menuItems = [

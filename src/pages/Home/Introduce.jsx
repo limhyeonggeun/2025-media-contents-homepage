@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import "../../styles/main/Introduce.css";
 import introduceicon from "../../assets/images/megaphone.png";
-import introduceImg1 from "../../assets/images/introduce1.png";
-import introduceImg2 from "../../assets/images/introduce2.png";
-import introduceImg3 from "../../assets/images/introduce3.png";
+import introduceImg1 from "../../assets/images/introduce1.jpg";
+import introduceImg2 from "../../assets/images/introduce2.jpg";
+import introduceImg3 from "../../assets/images/introduce3.jpg";
 
 export default function Introduce() {
   const lastScrollY = useRef(window.scrollY);
