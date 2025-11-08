@@ -37,11 +37,11 @@
 
 @media (max-width: 1024px) {
   .guestbook-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .guestbook-grid {
     grid-template-columns: 1fr;
   }
@@ -55,6 +55,31 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 0.4rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  --fold: 2.4rem; /* fold size */
+}
+
+.guestbook-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Washi tape at top center */
+.guestbook-card::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem; /* slightly above to look taped */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 2.2rem;
+  background: rgba(175, 201, 255, 0.55);
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  backdrop-filter: saturate(110%);
 }
 
 .guestbook-name {
@@ -80,4 +105,91 @@
   line-height: 2.4rem;
   flex: 1;
   margin: 2.4rem 0;
+}
+
+.guestbook-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.gb-btn {
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+.gb-btn.primary { background: #2b7cff; color: #fff; border-color: #2b7cff; }
+.gb-btn.danger { background: #ff5252; color: #fff; border-color: #ff5252; }
+
+.gb-iconbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  color: #2b2b2b;
+  cursor: pointer;
+}
+.gb-iconbtn:hover { background: #f6f6f6; }
+.gb-iconbtn.danger { color: #ff5252; border-color: #ff9a9a; }
+.gb-iconbtn.danger:hover { background: #ffecec; }
+.gb-icon { width: 18px; height: 18px; display: block; }
+
+/* bottom-right floating delete button */
+.gb-delete {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* top-right edit button (pencil) */
+.gb-edit {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+}
+
+.gb-input, .gb-textarea {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  background: rgba(255,255,255,0.8);
+}
+.gb-textarea { resize: vertical; }
+.gb-label { font-size: 1.4rem; color: var(--text-sub); }
+
+/* -------- Responsive enhancements -------- */
+@media (max-width: 1280px) {
+  .guestbook-grid { gap: 3.2rem; }
+}
+
+@media (max-width: 1024px) {
+  .guestbook-titlebox { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+  .guestbook-grid { grid-template-columns: repeat(3, 1fr); gap: 3.2rem; }
+  .guestbook-card { width: 100%; min-height: 32rem; }
+  .guestbook-card::before { width: 60%; height: 1.8rem; top: -0.6rem; }
+  .guestbook-message { font-size: 1.8rem; line-height: 2.2rem; }
+  .gb-iconbtn { width: 3rem; height: 3rem; }
+}
+
+@media (max-width: 700px) {
+  .guestbook-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+  .guestbook-card { padding: 1.6rem; min-height: 28rem; }
+  .guestbook-title { font-size: 3.6rem; }
+  .guestbook-name { font-size: 2rem; }
+  .guestbook-to, .guestbook-from { font-size: 1.8rem; }
+  .guestbook-message { font-size: 1.7rem; line-height: 2.1rem; }
+  .gb-input, .gb-textarea { font-size: 1.6rem; }
+  .gb-icon { width: 16px; height: 16px; }
+  .guestbook-card::before { width: 58%; height: 1.6rem; top: -0.5rem; }
+  .guestbook-card { --fold: 2rem; }
 }
