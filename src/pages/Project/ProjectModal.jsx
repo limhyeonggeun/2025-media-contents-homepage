@@ -6,12 +6,15 @@ import iconMail from "../../assets/images/mail.png";
 export default function ProjectModal({ data, onClose }) {
   const [activeTab, setActiveTab] = useState("panel");
   const [activeMember, setActiveMember] = useState(null);
+
   const isDual = data.id === "dev-03";
+  const isTwoTab = data.id === "dev-01" || data.id === "dev-02";
 
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
+
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "auto";
@@ -20,25 +23,38 @@ export default function ProjectModal({ data, onClose }) {
 
   if (!data) return null;
 
+  const convertYouTubeURL = (url) => {
+    if (!url) return null;
+    if (url.includes("youtube.com/embed/")) return url;
+    if (url.includes("watch?v=")) {
+      const id = url.split("watch?v=")[1].split("&")[0];
+      return `https://www.youtube.com/embed/${id}`;
+    }
+    if (url.includes("youtu.be/")) {
+      const id = url.split("youtu.be/")[1].split("?")[0];
+      return `https://www.youtube.com/embed/${id}`;
+    }
+    if (url.includes("shorts/")) {
+      const id = url.split("shorts/")[1].split("?")[0];
+      return `https://www.youtube.com/embed/${id}`;
+    }
+    return url;
+  };
+
   const showProfile =
     isDual && activeMember
       ? require(`../../assets/images/${activeMember.profile}`)
       : data.images.profile;
 
-  const showName =
-    isDual && activeMember ? activeMember.name : data.name;
+  const showName = isDual && activeMember ? activeMember.name : data.name;
+  const showPosition = isDual && activeMember ? activeMember.position : data.position;
+  const showPhone = isDual && activeMember ? activeMember.phone : data.phone;
+  const showEmail = isDual && activeMember ? activeMember.email : data.email;
 
-  const showPosition =
-    isDual && activeMember ? activeMember.position : data.position;
-
-  const showPhone =
-    isDual && activeMember ? activeMember.phone : data.phone;
-
-  const showEmail =
-    isDual && activeMember ? activeMember.email : data.email;
-
-  const showIntro =
-    isDual && activeMember ? activeMember.intro : data.links?.intro;
+  const showPresentation = convertYouTubeURL(data.links?.presentation);
+  const showIntro = convertYouTubeURL(
+    isDual && activeMember ? activeMember.intro : data.links?.intro
+  );
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -52,56 +68,51 @@ export default function ProjectModal({ data, onClose }) {
           </div>
 
           <div className="modal-content">
-            <div className="modal-image-wrap">
-              <img src={showProfile} alt={showName} className="modal-main-img" />
-            </div>
 
-            <div className="modal-info">
+
+          <div className="modal-top-row">
+            <img src={showProfile} alt={showName} className="modal-main-img" />
+
+            <div className="modal-basic-info">
               <p className="modal-name">{showName}</p>
               <p className="modal-role">{data.role}</p>
               <p className="modal-position">{showPosition}</p>
-              <p className="modal-about">{data.about}</p>
-
-              <div className="modal-contact">
-                <p>
-                  <img src={iconPhone} alt="phone" className="contact-icon" />
-                  <span>{showPhone}</span>
-                </p>
-                <p>
-                  <img src={iconMail} alt="mail" className="contact-icon" />
-                  <span>{showEmail}</span>
-                </p>
-              </div>
             </div>
           </div>
+
+          <div className="modal-info">
+            <p className="modal-about">{data.about}</p>
+
+            <div className="modal-contact">
+              <p>
+                <img src={iconPhone} alt="phone" className="contact-icon" />
+                <span>{showPhone}</span>
+              </p>
+              <p>
+                <img src={iconMail} alt="mail" className="contact-icon" />
+                <span>{showEmail}</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
         </div>
 
         <div className={`modal-right ${data.isTeamProject ? "team-right" : ""}`}>
           <div className="modal-right-content">
+
             {activeTab === "panel" && (
-              <div
-                className={`modal-panel-wrap ${
-                  data.isTeamProject ? "team-panel" : ""
-                }`}
-              >
-                <img
-                  src={data.images.panel}
-                  alt="Panel"
-                  className="modal-panel-img"
-                />
+              <div className={`modal-panel-wrap ${data.isTeamProject ? "team-panel" : ""}`}>
+                <img src={data.images.panel} alt="Panel" className="modal-panel-img" />
               </div>
             )}
 
             {activeTab === "presentation" && (
               <div className="modal-video-wrap">
-                {data.links?.presentation ? (
-                  <iframe
-                    src={data.links.presentation}
-                    title="presentation"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                {showPresentation ? (
+                  <div className="modal-video-inner">
+                    <iframe src={showPresentation} title="presentation" allowFullScreen />
+                  </div>
                 ) : (
                   <p className="empty-text">등록된 제안 발표 영상이 없습니다.</p>
                 )}
@@ -111,20 +122,16 @@ export default function ProjectModal({ data, onClose }) {
             {(activeTab === "intro" || activeTab === "hyunbin" || activeTab === "giwon") && (
               <div className="modal-video-wrap">
                 {showIntro ? (
-                  <iframe
-                    src={showIntro}
-                    title="intro"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  <div className="modal-video-inner">
+                    <iframe src={showIntro} title="intro" allowFullScreen />
+                  </div>
                 ) : (
                   <p className="empty-text">등록된 1분 자기소개 영상이 없습니다.</p>
                 )}
               </div>
             )}
 
-            {!data.isTeamProject && !isDual && (
+            {!isTwoTab && !isDual && !data.isTeamProject && (
               <div className="modal-tab-buttons">
                 <button
                   className={activeTab === "panel" ? "active" : ""}
@@ -147,6 +154,23 @@ export default function ProjectModal({ data, onClose }) {
               </div>
             )}
 
+            {isTwoTab && (
+              <div className="modal-tab-buttons">
+                <button
+                  className={activeTab === "panel" ? "active" : ""}
+                  onClick={() => setActiveTab("panel")}
+                >
+                  프로젝트 제안
+                </button>
+                <button
+                  className={activeTab === "intro" ? "active" : ""}
+                  onClick={() => setActiveTab("intro")}
+                >
+                  1분 자기소개
+                </button>
+              </div>
+            )}
+
             {isDual && (
               <div className="modal-tab-buttons">
                 <button
@@ -158,6 +182,7 @@ export default function ProjectModal({ data, onClose }) {
                 >
                   프로젝트 제안
                 </button>
+
                 <button
                   className={activeTab === "hyunbin" ? "active" : ""}
                   onClick={() => {
@@ -167,6 +192,7 @@ export default function ProjectModal({ data, onClose }) {
                 >
                   유현빈 자기소개
                 </button>
+
                 <button
                   className={activeTab === "giwon" ? "active" : ""}
                   onClick={() => {
@@ -178,6 +204,7 @@ export default function ProjectModal({ data, onClose }) {
                 </button>
               </div>
             )}
+
           </div>
         </div>
       </div>

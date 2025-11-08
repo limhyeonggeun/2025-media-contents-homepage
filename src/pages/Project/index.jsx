@@ -46,13 +46,45 @@ export default function Project() {
 
   const ProfileCard = ({ data }) => {
     const productImg = loadImage(data.images.product);
+  
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 600;
+    const [flipped, setFlipped] = useState(false);
+    const [timer, setTimer] = useState(null);
+  
+    const handleClick = () => {
+      if (!isMobile) {
+        // PC → 모달만 열림
+        setModalData(data);
+        return;
+      }
+  
+      // 모바일: 뒤집힌 상태에서 다시 클릭 → 모달 열기
+      if (flipped) {
+        setFlipped(false);
+        setModalData(data);
+        return;
+      }
+  
+      setFlipped(true);
+  
+      if (timer) clearTimeout(timer);
 
+      const newTimer = setTimeout(() => {
+        setFlipped(false);
+      }, 1000);
+  
+      setTimer(newTimer);
+    };
+  
     return (
-      <div className="project-profile" onClick={() => setModalData(data)}>
+      <div
+        className={`project-profile ${flipped ? "flip" : ""}`}
+        onClick={handleClick}
+      >
         <div className="profile-front">
           <img src={productImg} alt={data.name} />
         </div>
-
+  
         <div className="profile-back">
           <img className="back-img" src={productImg} alt={data.name} />
           <div className="back-overlay">

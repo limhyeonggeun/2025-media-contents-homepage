@@ -424,7 +424,7 @@ export const members = [
       },
   
       about:
-        "호텔 예약과 고객 문의 과정에서 반복적인 응대와 정보 확인으로 비효율이 발생하고 있습니다. 사용자는 여러 채널을 오가며 정보를 확인해야 하는 불편을 겪고 있습니다. 이에 고객의 이용 편의를 높이고 브랜드 경험을 통합할 수 있는 통합형 고객지원 시스템 구축을 제안합니다.",
+        "호텔 예약과 고객 문의 과정에서 반복적인 응대와 정보 확인으로 업무 효율이 저하되고 있습니다. 사용자는 여러 채널을 오가며 필요한 정보를 직접 찾아야 하는 불편을 겪고 있습니다. 이에 고객의 이용 편의를 높이고 일관된 브랜드 경험을 제공하며, 데이터 기반으로 고객 요구를 분석·개선하고 맞춤형 서비스를 강화할 수 있는 지능형 통합 고객지원 시스템 구축을 제안합니다.",
   
       phone: "010-7942-6502",
       email: "injoon0526@kakao.com",
@@ -447,7 +447,7 @@ export const members = [
   
       links: {
         presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        intro: "https://youtu.be/Wx9WbNkL2oY?si=kd4FMdVQrkJCQUzu",
       },
   
       about:

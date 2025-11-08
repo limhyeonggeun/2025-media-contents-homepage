@@ -19,18 +19,19 @@
   font-size: 3.2rem;
   font-weight: 700;
   position: relative;
-  display: inline-block;    
+  display: inline-block;
   line-height: 1.2;
-  margin-bottom: 1.6rem;            
+  margin-bottom: 1.6rem;
 }
 
-.dept-title::after{
+.dept-title::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 1rem;
+  opacity: 0.8;
   background-color: var(--accent-main);
   z-index: -1;
 }
@@ -39,6 +40,7 @@
   font-family: "Noto Sans KR", sans-serif;
   font-size: 2rem;
   font-weight: 500;
+  color: var(--text-secondary);
   margin-bottom: 7rem;
 }
 
@@ -55,20 +57,21 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: 2.5rem;
 }
 
 .core-circle {
   width: 28rem;
   height: 28rem;
   border-radius: 50%;
+  background-color: #000;
   box-shadow: 0 0 3rem 0 var(--accent-main);
-  z-index: 9999 !important; 
+  z-index: 3;
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0; 
 }
 
 .core-circle .kr {
@@ -86,27 +89,20 @@
 
 .core-row {
   display: flex;
-  flex-direction: column;  
+  margin: 0 -2.5rem;
+  flex-direction: column;
   position: relative;
   align-items: center;
   justify-items: center;
+  height: 100%;
+  width: 28rem;
+  background: url("../../assets/images/infobg.png") center no-repeat;
+  background-size: 28rem 28rem;
+  z-index: 1;
 }
 
 .core-row > *:not(:first-child) {
   margin-top: -25px;
-}
-
-.core-row::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;            
-  transform: translate(-50%, -50%); 
-  z-index: -1 !important;
-  width: 28rem;
-  height: 28rem;
-  border-radius: 50%;
-  border: 2px dashed var(--accent-main);
 }
 
 .core-center {
@@ -119,6 +115,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .center-title {
@@ -141,19 +138,19 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   font-family: "Paperlogy", sans-serif;
   font-size: 4rem;
   font-weight: 600;
   background-color: #000;
   padding: 1rem 2rem;
-  white-space: nowrap; 
+  white-space: nowrap;
   display: inline-block;
   z-index: 2;
 }
 
 .box-title .highlight {
-  color: var(--accent-main); 
+  color: var(--accent-main);
 }
 
 .box-text {
@@ -176,12 +173,12 @@
   font-size: 3.2rem;
   font-weight: 700;
   position: relative;
-  display: inline-block;    
+  display: inline-block;
   line-height: 1.2;
-  margin-bottom: 1.6rem; 
+  margin-bottom: 1.6rem;
 }
 
-.faculty-title::after{
+.faculty-title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -189,6 +186,7 @@
   width: 100%;
   height: 1rem;
   background-color: var(--accent-main);
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -197,14 +195,13 @@
   font-size: 2rem;
 }
 
-/* Slider */
 .faculty-slider {
   display: flex;
   gap: 2.7rem;
   margin-top: 3rem;
   padding-bottom: 1rem;
   overflow: visible;
-  transition: transform 0.35s ease;   
+  transition: transform 0.35s ease;
 }
 
 .faculty-slider::-webkit-scrollbar {
@@ -231,7 +228,7 @@
   height: 32rem;
 }
 
-.faculty-role{
+.faculty-role {
   background-color: var(--accent-main);
   display: inline-block;
   padding: 1rem 1.6rem;
@@ -247,7 +244,7 @@
   font-weight: 700;
 }
 
-.faculty-bar{
+.faculty-bar {
   margin-top: 2rem;
   width: 8rem;
   height: 0.5rem;
@@ -261,7 +258,7 @@
   line-height: 2.4rem;
   color: #ddd;
   display: -webkit-box;
-  -webkit-line-clamp: 5;  
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -275,7 +272,7 @@
 
 .faculty-btn {
   position: absolute;
-  top: 30%;
+  top: 35%;
   transform: translateY(-50%);
   width: 4.8rem;
   height: 4.8rem;
@@ -302,3 +299,139 @@
   pointer-events: none;
 }
 
+@media (max-width: 600px) {
+  .dept-info {
+    margin-top: 3.2rem;
+    padding: 0 1.6rem;
+  }
+
+  .dept-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .dept-title::after {
+    height: 0.6rem;
+  }
+
+  .dept-sub {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .dept-core {
+    margin-bottom: 8rem;
+  }
+
+  .core-wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .core-circle {
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 0 2rem var(--accent-main);
+  }
+  .core-circle .kr {
+    font-size: 2rem;
+  }
+  .core-circle .en {
+    font-size: 1.2rem;
+  }
+
+  .core-row {
+    background-size: 16rem 16rem;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+  .core-row > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: -1rem;
+  }
+
+  .core-center {
+    width: 12rem;
+    height: 12rem;
+  }
+  .center-title {
+    font-size: 1.6rem;
+  }
+
+  .dept-box {
+    padding: 4.8rem 1rem 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .box-title {
+    font-size: 2rem;
+    padding: 0.6rem 1rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .box-text {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+
+  .faculty-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .faculty {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    padding: 0 1.2rem;
+  }
+
+  .faculty-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .faculty-title::after {
+    height: 0.6rem;
+  }
+
+  .faculty-sub {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .faculty-slider {
+    gap: 1.6rem;
+    padding-bottom: 0;
+    transform: none !important; 
+  }
+
+  .faculty-card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+
+  .faculty-img {
+    width: 100%;
+  }
+
+  .faculty-name {
+    font-size: 1.8rem;
+  }
+
+  .faculty-role {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .faculty-message {
+    font-size: 1.4rem;
+    -webkit-line-clamp: 4;
+  }
+
+  .faculty-btn {
+    display: none;
+  }
+}
