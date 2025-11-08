@@ -1,0 +1,304 @@
+.dept-info {
+  width: 100%;
+  max-width: 128rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem auto 0;
+}
+
+.dept-header {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.dept-title {
+  font-family: "Paperlogy", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;    
+  line-height: 1.2;
+  margin-bottom: 1.6rem;            
+}
+
+.dept-title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: var(--accent-main);
+  z-index: -1;
+}
+
+.dept-sub {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 7rem;
+}
+
+.dept-core {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14rem;
+}
+
+.core-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2.5rem;
+}
+
+.core-circle {
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  box-shadow: 0 0 3rem 0 var(--accent-main);
+  z-index: 9999 !important; 
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.core-circle .kr {
+  font-family: "Paperlogy", sans-serif;
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: var(--accent-main);
+}
+
+.core-circle .en {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.6rem;
+  opacity: 0.7;
+}
+
+.core-row {
+  display: flex;
+  flex-direction: column;  
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+
+.core-row > *:not(:first-child) {
+  margin-top: -25px;
+}
+
+.core-row::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;            
+  transform: translate(-50%, -50%); 
+  z-index: -1 !important;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  border: 2px dashed var(--accent-main);
+}
+
+.core-center {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  position: relative;
+  color: var(--text-dark);
+}
+
+.dept-box {
+  width: 100%;
+  border: 2px solid #fff;
+  margin-bottom: 10rem;
+  position: relative;
+  padding: 6.5rem 2rem 5rem;
+}
+
+.box-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-family: "Paperlogy", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  background-color: #000;
+  padding: 1rem 2rem;
+  white-space: nowrap; 
+  display: inline-block;
+  z-index: 2;
+}
+
+.box-title .highlight {
+  color: var(--accent-main); 
+}
+
+.box-text {
+  font-family: "Paperlogy", sans-serif;
+  font-size: 2.8rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+
+.faculty {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+.faculty-title {
+  font-family: "Paperlogy", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;    
+  line-height: 1.2;
+  margin-bottom: 1.6rem; 
+}
+
+.faculty-title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: var(--accent-main);
+  z-index: -1;
+}
+
+.faculty-sub {
+  font-family: "Noto Sans KR";
+  font-size: 2rem;
+}
+
+/* Slider */
+.faculty-slider {
+  display: flex;
+  gap: 2.7rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  overflow: visible;
+  transition: transform 0.35s ease;   
+}
+
+.faculty-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.faculty-slider::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.faculty-slider::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.faculty-card {
+  flex: 0 0 calc((100% - 2.7rem * 3) / 4);
+  scroll-snap-align: start;
+  padding-bottom: 2rem;
+}
+
+.faculty-img {
+  width: 100%;
+  height: 32rem;
+}
+
+.faculty-role{
+  background-color: var(--accent-main);
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.faculty-name {
+  margin-top: 2rem;
+  font-family: "Noto Sans KR";
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.faculty-bar{
+  margin-top: 2rem;
+  width: 8rem;
+  height: 0.5rem;
+  background-color: #fff;
+}
+
+.faculty-message {
+  margin-top: 3rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ddd;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.faculty-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.faculty-btn {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.faculty-btn.left {
+  left: -10rem;
+}
+
+.faculty-btn.right {
+  right: -10rem;
+}
+
+.faculty-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
