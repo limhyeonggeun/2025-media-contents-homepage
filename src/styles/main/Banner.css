@@ -4,6 +4,7 @@
   height: calc(100vh - 10rem);
   overflow: hidden;
   margin-top: 10rem;
+  margin-bottom: 6rem;
 }
 
 .banner-video {
@@ -102,6 +103,7 @@
   .Banner {
     margin-top: 7rem;
     height: 100%; 
+    margin-bottom: 6rem;
   }
 
   .banner-overlay {

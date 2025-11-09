@@ -345,6 +345,8 @@
     flex-direction: row;
     width: 100%;
     margin: 0;
+    transform: translateX(1rem);
+    background-position: calc(50% - 1rem) center;
   }
 
   .core-row > *:not(:first-child) {

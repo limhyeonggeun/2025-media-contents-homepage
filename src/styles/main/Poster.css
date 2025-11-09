@@ -1,7 +1,8 @@
 .poster {
   position: relative;
   width: 100%;
-  height: 108rem; 
+  height: auto;
+  margin-bottom: 14rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +84,7 @@
 
   .poster {
     height: auto;
-    padding: 4rem 0;
+    margin-bottom: 6rem;
   }
 
   .poster-inner {

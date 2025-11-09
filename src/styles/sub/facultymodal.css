@@ -86,7 +86,7 @@
 .faculty-modal-right {
   flex: 1;
   max-height: calc(60vh - 6.4rem);
-  overflow-y: auto;
+  overflow: hidden;
   padding-right: 1rem;
 }
 

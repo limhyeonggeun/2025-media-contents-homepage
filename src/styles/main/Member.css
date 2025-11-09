@@ -1,11 +1,12 @@
 .member-section {
   width: 100%;
-  height: 108rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   gap: 4rem;
+  height: auto;
+  margin-bottom: 10rem;
 }
 
 .member-header {
@@ -39,7 +40,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 38rem;
+  height: 30rem;
   margin: 0 auto;
   perspective: 1800px;
   transform-style: preserve-3d;
@@ -59,7 +60,7 @@
 
 .member-card img {
   width: 28rem;
-  height: 38rem;
+  height: 100%;
   object-fit: cover;
   border-radius: 1.5rem;
 }
@@ -67,7 +68,7 @@
 @media (max-width: 600px) {
   .member-section {
     height: auto;
-    padding-bottom: 4rem;
+    margin-bottom: 6rem;
     gap: 0;
   }
 
