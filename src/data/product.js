@@ -10,9 +10,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/kwakminji/product-img.png",
+        product: "productmanager/kwakminji/product-img.jpg",
         profile: "productmanager/kwakminji/profile-img.png",
-        panel: "productmanager/kwakminji/panel-img.png",
+        panel: "productmanager/kwakminji/panel-img-min.jpg",
       },
     
       links: {
@@ -35,9 +35,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/koobonhui/product-img.png",
+        product: "productmanager/koobonhui/product-img.jpg",
         profile: "productmanager/koobonhui/profile-img.png",
-        panel: "productmanager/koobonhui/panel-img.jpg",
+        panel: "productmanager/koobonhui/panel-img-min.jpg",
       },
     
       links: {
@@ -60,9 +60,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/kimsoomin/product-img.png",
+        product: "productmanager/kimsoomin/product-img.jpg",
         profile: "productmanager/kimsoomin/profile-img.png",
-        panel: "productmanager/kimsoomin/panel-img.jpg",
+        panel: "productmanager/kimsoomin/panel-img-min.jpg",
       },
     
       links: {
@@ -86,9 +86,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/kimeunseo/product-img.png",
+        product: "productmanager/kimeunseo/product-img.jpg",
         profile: "productmanager/kimeunseo/profile-img.png",
-        panel: "productmanager/kimeunseo/panel-img.jpg",
+        panel: "productmanager/kimeunseo/panel-img-min.jpg",
       },
     
       links: {
@@ -111,9 +111,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/kimjinwoo/product-img.png",
+        product: "productmanager/kimjinwoo/product-img.jpg",
         profile: "productmanager/kimjinwoo/profile-img.png",
-        panel: "productmanager/kimjinwoo/panel-img.jpg",
+        panel: "productmanager/kimjinwoo/panel-img-min.jpg",
       },
     
       links: {
@@ -138,7 +138,7 @@ export const members = [
       images: {
         product: "productmanager/kimhyunjung/pruduct-img.jpg",
         profile: "productmanager/kimhyunjung/profile-img.png",
-        panel: "productmanager/kimhyunjung/panel-img.jpg",
+        panel: "productmanager/kimhyunjung/panel-img-min.jpg",
       },
     
       links: {
@@ -161,9 +161,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/moontaehwan/product-img.png",
+        product: "productmanager/moontaehwan/product-img.jpg",
         profile: "productmanager/moontaehwan/profile-img.png",
-        panel: "productmanager/moontaehwan/panel-img.jpg",
+        panel: "productmanager/moontaehwan/panel-img-min.jpg",
       },
     
       links: {
@@ -186,9 +186,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/parksujin/product-img.png",
+        product: "productmanager/parksujin/product-img.jpg",
         profile: "productmanager/parksujin/profile-img.png",
-        panel: "productmanager/parksujin/panel-img.jpg",
+        panel: "productmanager/parksujin/panel-img-min.jpg",
       },
     
       links: {
@@ -211,9 +211,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/bakwonbin/product-img.png",
+        product: "productmanager/bakwonbin/product-img.jpg",
         profile: "productmanager/bakwonbin/profile-img.png",
-        panel: "productmanager/bakwonbin/panel-img.jpg",
+        panel: "productmanager/bakwonbin/panel-img-min.jpg",
       },
     
       links: {
@@ -236,9 +236,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/leejihyeok/product-img.png",
+        product: "productmanager/leejihyeok/product-img.jpg",
         profile: "productmanager/leejihyeok/profile-img.png",
-        panel: "productmanager/leejihyeok/panel-img.jpg",
+        panel: "productmanager/leejihyeok/panel-img-min.jpg",
       },
     
       links: {
@@ -261,9 +261,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/leehyunjeong/product-img.png",
+        product: "productmanager/leehyunjeong/product-img.jpg",
         profile: "productmanager/leehyunjeong/profile-img.png",
-        panel: "productmanager/leehyunjeong/panel-img.jpg",
+        panel: "productmanager/leehyunjeong/panel-img-min.jpg",
       },
     
       links: {
@@ -287,9 +287,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/choieunbin/product-img.png",
+        product: "productmanager/choieunbin/product-img.jpg",
         profile: "productmanager/choieunbin/profile-img.png",
-        panel: "productmanager/choieunbin/panel-img.jpeg",
+        panel: "productmanager/choieunbin/panel-img-min.jpg",
       },
     
       links: {
@@ -312,9 +312,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/choihyukju/product-img.png",
+        product: "productmanager/choihyukju/product-img.jpg",
         profile: "productmanager/choihyukju/profile-img.png",
-        panel: "productmanager/choihyukju/panel-img.jpg",
+        panel: "productmanager/choihyukju/panel-img-min.jpg",
       },
     
       links: {
@@ -337,9 +337,9 @@ export const members = [
       position: "기획자",
     
       images: {
-        product: "productmanager/chukanghyun/product-img.png",
+        product: "productmanager/chukanghyun/product-img.jpg",
         profile: "productmanager/chukanghyun/profile-img.png",
-        panel: "productmanager/chukanghyun/panel-img.jpg",
+        panel: "productmanager/chukanghyun/panel-img-min.jpg",
       },
     
       links: {
@@ -362,9 +362,9 @@ export const members = [
       position: "UI/UX 기획자",
     
       images: {
-        product: "productmanager/heoseonbeom/product-img.png",
+        product: "productmanager/heoseonbeom/product-img.jpg",
         profile: "productmanager/heoseonbeom/profile-img.png",
-        panel: "productmanager/heoseonbeom/panel-img.jpg",
+        panel: "productmanager/heoseonbeom/panel-img-min.jpg",
       },
     
       links: {
@@ -387,9 +387,9 @@ export const members = [
       position: "UI/UX 기획자",
   
       images: {
-        product: "productmanager/hwangjaeha/product-img.png",
+        product: "productmanager/hwangjaeha/product-img.jpg",
         profile: "productmanager/hwangjaeha/profile-img.png",
-        panel: "productmanager/hwangjaeha/panel-img.jpg",
+        panel: "productmanager/hwangjaeha/panel-img-min.jpg",
       },
   
       links: {
@@ -413,9 +413,9 @@ export const members = [
       position: "개발자",
   
       images: {
-        product: "developer/leeinjun/product-img.png",
+        product: "developer/leeinjun/product-img.jpg",
         profile: "developer/leeinjun/profile-img.png",
-        panel: "developer/leeinjun/panel-img.jpg",
+        panel: "developer/leeinjun/panel-img-min.jpg",
       },
   
       links: {
@@ -424,7 +424,7 @@ export const members = [
       },
   
       about:
-        "호텔 예약과 고객 문의 과정에서 반복적인 응대와 정보 확인으로 비효율이 발생하고 있습니다. 사용자는 여러 채널을 오가며 정보를 확인해야 하는 불편을 겪고 있습니다. 이에 고객의 이용 편의를 높이고 브랜드 경험을 통합할 수 있는 통합형 고객지원 시스템 구축을 제안합니다.",
+        "호텔 예약과 고객 문의 과정에서 반복적인 응대와 정보 확인으로 업무 효율이 저하되고 있습니다. 사용자는 여러 채널을 오가며 필요한 정보를 직접 찾아야 하는 불편을 겪고 있습니다. 이에 고객의 이용 편의를 높이고 일관된 브랜드 경험을 제공하며, 데이터 기반으로 고객 요구를 분석·개선하고 맞춤형 서비스를 강화할 수 있는 지능형 통합 고객지원 시스템 구축을 제안합니다.",
   
       phone: "010-7942-6502",
       email: "injoon0526@kakao.com",
@@ -440,14 +440,14 @@ export const members = [
       position: "개발자",
   
       images: {
-        product: "developer/limhyeonggeun/product-img.png",
+        product: "developer/limhyeonggeun/product-img.jpg",
         profile: "developer/limhyeonggeun/profile-img.png",
-        panel: "developer/limhyeonggeun/panel-img.jpg",
+        panel: "developer/limhyeonggeun/panel-img-min.jpg",
       },
   
       links: {
         presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        intro: "https://youtu.be/Wx9WbNkL2oY?si=kd4FMdVQrkJCQUzu",
       },
   
       about:
@@ -467,9 +467,9 @@ export const members = [
       position: "락온",
     
       images: {
-        product: "developer/lockon/product-img.png",
+        product: "developer/lockon/product-img.jpg",
         profile: "developer/lockon/profile-img.png",
-        panel: "developer/lockon/panel-img.jpg",
+        panel: "developer/lockon/panel-img-min.jpg",
       },
     
       members: [
@@ -511,9 +511,9 @@ export const members = [
       position: "디자이너",
   
       images: {
-        product: "designer/nohminji/product-img.png",
+        product: "designer/nohminji/product-img.jpg",
         profile: "designer/nohminji/profile-img.png",
-        panel: "designer/nohminji/panel-img.jpg",
+        panel: "designer/nohminji/panel-img-min.jpg",
       },
   
       links: {
@@ -538,9 +538,9 @@ export const members = [
       position: "디자이너",
   
       images: {
-        product: "designer/parkhyeonju/product-img.png",
+        product: "designer/parkhyeonju/product-img.jpg",
         profile: "designer/parkhyeonju/profile-img.png",
-        panel: "designer/parkhyeonju/panel-img.jpg",
+        panel: "designer/parkhyeonju/panel-img-min.jpg",
       },
   
       links: {
@@ -565,9 +565,9 @@ export const members = [
       position: "디자이너",
   
       images: {
-        product: "designer/leejisoo/product-img.png",
+        product: "designer/leejisoo/product-img.jpg",
         profile: "designer/leejisoo/profile-img.png",
-        panel: "designer/leejisoo/panel-img.jpg",
+        panel: "designer/leejisoo/panel-img-min.jpg",
       },
   
       links: {
@@ -593,9 +593,9 @@ export const members = [
       position: "브랜드 마케팅 기획자",
   
       images: {
-        product: "marketer/leeayeon/product-img.png",
+        product: "marketer/leeayeon/product-img.jpg",
         profile: "marketer/leeayeon/profile-img.png",
-        panel: "marketer/leeayeon/panel-img.jpg",
+        panel: "marketer/leeayeon/panel-img-min.jpg",
       },
   
       links: {
@@ -620,9 +620,9 @@ export const members = [
       position: "브랜드 마케팅 기획자",
   
       images: {
-        product: "marketer/ohjeahun/product-img.png",
+        product: "marketer/ohjeahun/product-img.jpg",
         profile: "marketer/ohjeahun/profile-img.png",
-        panel: "marketer/ohjeahun/panel-img.jpg",
+        panel: "marketer/ohjeahun/panel-img-min.jpg",
       },
   
       links: {
@@ -648,9 +648,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/kangjiheon/product-img.png",
+        product: "videoplanning/kangjiheon/product-img.jpg",
         profile: "videoplanning/kangjiheon/profile-img.png",
-        panel: "videoplanning/kangjiheon/panel-img.png",
+        panel: "videoplanning/kangjiheon/panel-img-min.jpg",
       },
   
       links: {
@@ -675,9 +675,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/kosungjoon/product-img.png",
+        product: "videoplanning/kosungjoon/product-img.jpg",
         profile: "videoplanning/kosungjoon/profile-img.png",
-        panel: "videoplanning/kosungjoon/panel-img.jpg",
+        panel: "videoplanning/kosungjoon/panel-img-min.jpg",
       },
   
       links: {
@@ -702,9 +702,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/kwonminseo/product-img.png",
+        product: "videoplanning/kwonminseo/product-img.jpg",
         profile: "videoplanning/kwonminseo/profile-img.png",
-        panel: "videoplanning/kwonminseo/panel-img.jpg",
+        panel: "videoplanning/kwonminseo/panel-img-min.jpg",
       },
   
       links: {
@@ -729,9 +729,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/kimdohee/product-img.png",
+        product: "videoplanning/kimdohee/product-img.jpg",
         profile: "videoplanning/kimdohee/profile-img.png",
-        panel: "videoplanning/kimdohee/panel-img.jpg",
+        panel: "videoplanning/kimdohee/panel-img-min.jpg",
       },
   
       links: {
@@ -756,9 +756,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/kimseongil/product-img.png",
+        product: "videoplanning/kimseongil/product-img.jpg",
         profile: "videoplanning/kimseongil/profile-img.png",
-        panel: "videoplanning/kimseongil/panel-img.jpg",
+        panel: "videoplanning/kimseongil/panel-img-min.jpg",
       },
   
       links: {
@@ -783,9 +783,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/kimjoonhong/product-img.png",
+        product: "videoplanning/kimjoonhong/product-img.jpg",
         profile: "videoplanning/kimjoonhong/profile-img.png",
-        panel: "videoplanning/kimjoonhong/panel-img.jpg",
+        panel: "videoplanning/kimjoonhong/panel-img-min.jpg",
       },
   
       links: {
@@ -810,9 +810,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/leeyuchan/product-img.png",
+        product: "videoplanning/leeyuchan/product-img.jpg",
         profile: "videoplanning/leeyuchan/profile-img.png",
-        panel: "videoplanning/leeyuchan/panel-img.jpg",
+        panel: "videoplanning/leeyuchan/panel-img-min.jpg",
       },
   
       links: {
@@ -837,9 +837,9 @@ export const members = [
       position: "영상 기획자",
   
       images: {
-        product: "videoplanning/choyongseok/product-img.png",
+        product: "videoplanning/choyongseok/product-img.jpg",
         profile: "videoplanning/choyongseok/profile-img.png",
-        panel: "videoplanning/choyongseok/panel-img.png",
+        panel: "videoplanning/choyongseok/panel-img-min.jpg",
       },
   
       links: {
@@ -865,9 +865,9 @@ export const members = [
       position: "3D 모델러",
   
       images: {
-        product: "3dmodeler/kimmigyeong/product-img.png",
+        product: "3dmodeler/kimmigyeong/product-img.jpg",
         profile: "3dmodeler/kimmigyeong/profile-img.png",
-        panel: "3dmodeler/kimmigyeong/panel-img.jpg",
+        panel: "3dmodeler/kimmigyeong/panel-img-min.jpg",
       },
   
       links: {
@@ -892,9 +892,9 @@ export const members = [
       position: "3D 모델러",
   
       images: {
-        product: "3dmodeler/kimhyunji/product-img.png",
+        product: "3dmodeler/kimhyunji/product-img.jpg",
         profile: "3dmodeler/kimhyunji/profile-img.png",
-        panel: "3dmodeler/kimhyunji/panel-img.jpg",
+        panel: "3dmodeler/kimhyunji/panel-img-min.jpg",
       },
   
       links: {
@@ -919,9 +919,9 @@ export const members = [
       position: "3D 모델러",
   
       images: {
-        product: "3dmodeler/baekwoongbin/product-img.png",
+        product: "3dmodeler/baekwoongbin/product-img.jpg",
         profile: "3dmodeler/baekwoongbin/profile-img.png",
-        panel: "3dmodeler/baekwoongbin/panel-img.jpg",
+        panel: "3dmodeler/baekwoongbin/panel-img-min.jpg",
       },
   
       links: {
@@ -946,9 +946,9 @@ export const members = [
       position: "3D 모델러",
   
       images: {
-        product: "3dmodeler/yookseoyoung/product-img.png",
+        product: "3dmodeler/yookseoyoung/product-img.jpg",
         profile: "3dmodeler/yookseoyoung/profile-img.png",
-        panel: "3dmodeler/yookseoyoung/panel-img.jpg",
+        panel: "3dmodeler/yookseoyoung/panel-img-min.jpg",
       },
   
       links: {
@@ -974,9 +974,9 @@ export const members = [
       position: "모션 그래픽 디자이너",
   
       images: {
-        product: "3dmotiongraphic/limsungjun/product-img.png",
+        product: "3dmotiongraphic/limsungjun/product-img.jpg",
         profile: "3dmotiongraphic/limsungjun/profile-img.png",
-        panel: "3dmotiongraphic/limsungjun/panel-img.jpg",
+        panel: "3dmotiongraphic/limsungjun/panel-img-min.jpg",
       },
   
       links: {
@@ -1001,9 +1001,9 @@ export const members = [
       position: "3D 모션그래픽 디자이너",
   
       images: {
-        product: "3dmotiongraphic/choisubin/product-img.png",
+        product: "3dmotiongraphic/choisubin/product-img.jpg",
         profile: "3dmotiongraphic/choisubin/profile-img.png",
-        panel: "3dmotiongraphic/choisubin/panel-img.jpg",
+        panel: "3dmotiongraphic/choisubin/panel-img-min.jpg",
       },
   
       links: {
@@ -1029,9 +1029,9 @@ export const members = [
       position: "김현정, 임형근, 허선범, 김진우, 황재하",
   
       images: {
-        product: "u300/1/product-img.png",
+        product: "u300/1/product-img.jpg",
         profile: "u300/1/profile-img.png",
-        panel: "u300/1/panel-img.jpg",
+        panel: "u300/1/panel-img-min.jpg",
       },
   
       about:
@@ -1051,9 +1051,9 @@ export const members = [
       position: "이아연 ,김도희, 이지수, 임성준, 최수빈",
   
       images: {
-        product: "u300/2/product-img.png",
+        product: "u300/2/product-img.jpg",
         profile: "u300/2/profile-img.png",
-        panel: "u300/2/panel-img.jpg",
+        panel: "u300/2/panel-img-min.jpg",
       },
   
       about:
@@ -1073,9 +1073,9 @@ export const members = [
       position: "구본희, 노민지, 박수진, 박현주, 이현정",
   
       images: {
-        product: "u300/3/product-img.png",
+        product: "u300/3/product-img.jpg",
         profile: "u300/3/profile-img.png",
-        panel: "u300/3/panel-img.jpg",
+        panel: "u300/3/panel-img-min.jpg",
       },
   
       about:
@@ -1095,9 +1095,9 @@ export const members = [
       position: "김성일, 김수민, 박원빈, 박세웅, 최은빈",
   
       images: {
-        product: "u300/4/product-img.png",
+        product: "u300/4/product-img.jpg",
         profile: "u300/4/profile-img.png",
-        panel: "u300/4/panel-img.jpg",
+        panel: "u300/4/panel-img-min.jpg",
       },
   
       about:
@@ -1117,9 +1117,9 @@ export const members = [
       position: "고성준, 김준홍, 유현빈, 이인준, 최혁주",
   
       images: {
-        product: "u300/5/product-img.png",
+        product: "u300/5/product-img.jpg",
         profile: "u300/5/profile-img.png",
-        panel: "u300/5/panel-img.jpg",
+        panel: "u300/5/panel-img-min.jpg",
       },
   
       about:
@@ -1139,9 +1139,9 @@ export const members = [
       position: "김현지, 김미경, 육서영",
   
       images: {
-        product: "u300/6/product-img.png",
+        product: "u300/6/product-img.jpg",
         profile: "u300/6/profile-img.png",
-        panel: "u300/6/panel-img.jpg",
+        panel: "u300/6/panel-img-min.jpg",
       },
   
       about:
@@ -1161,9 +1161,9 @@ export const members = [
       position: "이지혁, 추강현, 백웅빈, 강지헌, 이기원",
   
       images: {
-        product: "u300/7/product-img.png",
+        product: "u300/7/product-img.jpg",
         profile: "u300/7/profile-img.png",
-        panel: "u300/7/panel-img.jpg",
+        panel: "u300/7/panel-img-min.jpg",
       },
   
       about:
@@ -1183,9 +1183,9 @@ export const members = [
       position: "문태환, 진천규, 오제훈",
   
       images: {
-        product: "u300/8/product-img.png",
+        product: "u300/8/product-img.jpg",
         profile: "u300/8/profile-img.png",
-        panel: "u300/8/panel-img.jpg",
+        panel: "u300/8/panel-img-min.jpg",
       },
   
       about:
@@ -1205,9 +1205,9 @@ export const members = [
       position: "신수영, 곽민지, 유회창, 김지현",
   
       images: {
-        product: "u300/9/product-img.png",
+        product: "u300/9/product-img.jpg",
         profile: "u300/9/profile-img.png",
-        panel: "u300/9/panel-img.jpg",
+        panel: "u300/9/panel-img-min.jpg",
       },
   
       about:
@@ -1227,9 +1227,9 @@ export const members = [
       position: "김은서, 조용석, 이유찬, 최현아",
   
       images: {
-        product: "u300/10/product-img.jpeg",
+        product: "u300/10/product-img.jpg",
         profile: "u300/10/profile-img.png",
-        panel: "u300/10/panel-img.jpg",
+        panel: "u300/10/panel-img-min.jpg",
       },
   
       about:
@@ -1250,9 +1250,9 @@ export const members = [
       position: "황재하,김진우,김현정,허선범,임형근",
   
       images: {
-        product: "mt/1/product-img.png",
+        product: "mt/1/product-img.jpg",
         profile: "mt/1/profile-img.png",
-        panel: "mt/1/panel-img.jpg",
+        panel: "mt/1/panel-img-min.jpg",
       },
   
       about:
@@ -1272,9 +1272,9 @@ export const members = [
       position: "김수민, 박원빈, 이지혁, 최은빈, 추강현",
   
       images: {
-        product: "mt/2/product-img.png",
+        product: "mt/2/product-img.jpg",
         profile: "mt/2/profile-img.png",
-        panel: "mt/2/panel-img.jpg",
+        panel: "mt/2/panel-img-min.jpg",
       },
   
       about:
@@ -1294,9 +1294,9 @@ export const members = [
       position: "구본희, 노민지, 박수진, 박현주, 이현정",
   
       images: {
-        product: "mt/3/product-img.png",
+        product: "mt/3/product-img.jpg",
         profile: "mt/3/profile-img.png",
-        panel: "mt/3/panel-img.jpg",
+        panel: "mt/3/panel-img-min.jpg",
       },
   
       about:
@@ -1316,9 +1316,9 @@ export const members = [
       position: "최혁주, 이아연, 이지수, 이인준, 유현빈",
   
       images: {
-        product: "mt/4/product-img.png",
+        product: "mt/4/product-img.jpg",
         profile: "mt/4/profile-img.png",
-        panel: "mt/4/panel-img.jpg",
+        panel: "mt/4/panel-img-min.jpg",
       },
   
       about:
@@ -1338,9 +1338,9 @@ export const members = [
       position: "문태환, 곽민지, 신수영",
   
       images: {
-        product: "mt/5/product-img.png",
+        product: "mt/5/product-img.jpg",
         profile: "mt/5/profile-img.png",
-        panel: "mt/5/panel-img.jpg",
+        panel: "mt/5/panel-img-min.jpg",
       },
   
       about:

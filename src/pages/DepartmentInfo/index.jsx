@@ -3,16 +3,17 @@ import "../../styles/sub/departmentinfo.css";
 import CaretLeft from '../../assets/svg/CaretLeft.svg';
 import CaretRight from '../../assets/svg/CaretRight.svg';
 import facultyData from "../../data/faculty.js";
+import FacultyModal from "./FacultyModal.jsx";
 
 export default function DepartmentInfo() {
   const sliderRef = useRef(null);
   const [sliderIndex, setSliderIndex] = useState(0);
+  const [selectedProfessor, setSelectedProfessor] = useState(null);
 
   const loadImage = (path) => {
     try {
       return require(`../../assets/images/${path}`);
-    } catch (e) {
-      console.warn("이미지 로드 실패:", path);
+    } catch {
       return null;
     }
   };
@@ -34,6 +35,17 @@ export default function DepartmentInfo() {
       sliderRef.current.style.transform = `translateX(${-sliderIndex * cardWidth}px)`;
     }
   }, [sliderIndex]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSliderIndex((prev) => {
+        const max = facultyData.length - visibleCount;
+        return prev < max ? prev + 1 : 0;
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="dept-info">
@@ -57,15 +69,9 @@ export default function DepartmentInfo() {
           </div>
 
           <div className="core-row">
-            <div className="core-center">
-              <p className="center-title">브랜딩 마케팅</p>
-            </div>
-            <div className="core-center">
-              <p className="center-title">공통영역</p>
-            </div>
-            <div className="core-center">
-              <p className="center-title">기획설계</p>
-            </div>
+            <div className="core-center"><p className="center-title">브랜딩 마케팅</p></div>
+            <div className="core-center"><p className="center-title">공통영역</p></div>
+            <div className="core-center"><p className="center-title">기획설계</p></div>
           </div>
 
           <div className="core-circle">
@@ -74,15 +80,9 @@ export default function DepartmentInfo() {
           </div>
 
           <div className="core-row">
-            <div className="core-center">
-              <p className="center-title">브랜딩 마케팅</p>
-            </div>
-            <div className="core-center">
-              <p className="center-title">공통영역</p>
-            </div>
-            <div className="core-center">
-              <p className="center-title">기획설계</p>
-            </div>
+            <div className="core-center"><p className="center-title">실무 프로젝트</p></div>
+            <div className="core-center"><p className="center-title">디자인제작</p></div>
+            <div className="core-center"><p className="center-title">기획설계</p></div>
           </div>
 
           <div className="core-circle">
@@ -93,19 +93,15 @@ export default function DepartmentInfo() {
       </div>
 
       <section className="dept-box">
-        <h3 className="box-title">
-          <span className="highlight">실무 중심</span> 콘텐츠 전문가 교육과정
-        </h3>
+        <h3 className="box-title"><span className="highlight">실무 중심</span> 콘텐츠 전문가 교육과정</h3>
         <p className="box-text">직무 전공별 특화 실무 교육 진행</p>
         <p className="box-text">국가직무능력표준기반 교육 커리큘럼 운영</p>
         <p className="box-text">스마트콘텐츠, 영상미디어, 게임 등 진로디자인로드맵 운영</p>
-        <p className="box-text">실무 중심 교수진 및 교과 · 비교과 프로그램 구성</p>
+        <p className="box-text">실무 중심 교수진 및 교과·비교과 프로그램 구성</p>
       </section>
 
       <section className="dept-box">
-        <h3 className="box-title">
-          <span className="highlight">산하협력 프로젝트</span> 활성화
-        </h3>
+        <h3 className="box-title"><span className="highlight">산하협력 프로젝트</span> 활성화</h3>
         <p className="box-text">첨단융합스튜디오 운영 및 활성화</p>
         <p className="box-text">실무 프로젝트 형 취·창업 동아리와 산하협력 연계</p>
         <p className="box-text">창업캡스톤디자인 과목 연계를 통합 산학연 프로젝트 진행</p>
@@ -113,32 +109,34 @@ export default function DepartmentInfo() {
       </section>
 
       <section className="dept-box">
-        <h3 className="box-title">
-          멀티미디어 <span className="highlight">융복합콘텐츠 연구 개발</span>
-        </h3>
-        <p className="box-text">스마트디바이스 기반 스마트콘텐츠 제작</p>
-        <p className="box-text">영상미디어콘텐츠 제작</p>
-        <p className="box-text">VR · AR · 3D · 게임 개발</p>
-        <p className="box-text">Co-working Space 기반 콘텐츠 아이디어 개발</p>
+        <h3 className="box-title">멀티미디어 <span className="highlight">융복합콘텐츠 연구 개발</span></h3>
+        <p className="box-text">스마트디바이스를 활용한 스마트콘텐츠 제작 및 구현</p>
+        <p className="box-text">[New Media Contents Zone] 영상미디어콘텐츠 제작</p>
+        <p className="box-text">[XR Contents Zone] 3D, 게임, VR·AR, 홀로그램 개발</p>
+        <p className="box-text">[Co-working Space] 콘텐츠 아이디어·아이템 개발 구현</p>
       </section>
 
       <section className="faculty">
         <h2 className="faculty-title">FACULTY ADVISORS</h2>
         <p className="faculty-sub">미디어콘텐츠학부 교수진을 소개합니다.</p>
 
-        <div className="faculty-wrapper">
-          <button
-            className={`faculty-btn left ${sliderIndex === 0 ? "hidden" : ""}`}
-            onClick={() => handleSlide("left")}
-          >
-            <img src={CaretLeft} alt="prev" />
-          </button>
+        <button
+          className={`faculty-btn left ${sliderIndex === 0 ? "hidden" : ""}`}
+          onClick={() => handleSlide("left")}
+        >
+          <img src={CaretLeft} alt="prev" />
+        </button>
 
+        <div className="faculty-wrapper">
           <div className="faculty-slider" ref={sliderRef}>
             {facultyData.map((prof) => {
               const imageSrc = loadImage(prof.img);
               return (
-                <div className="faculty-card" key={prof.id}>
+                <div
+                  className="faculty-card"
+                  key={prof.id}
+                  onClick={() => setSelectedProfessor(prof)}
+                >
                   <div
                     className="faculty-img"
                     style={{
@@ -156,17 +154,23 @@ export default function DepartmentInfo() {
               );
             })}
           </div>
-
-          <button
-            className={`faculty-btn right ${
-              sliderIndex >= facultyData.length - visibleCount ? "hidden" : ""
-            }`}
-            onClick={() => handleSlide("right")}
-          >
-            <img src={CaretRight} alt="next" />
-          </button>
         </div>
+
+        <button
+          className={`faculty-btn right ${
+            sliderIndex >= facultyData.length - visibleCount ? "hidden" : ""
+          }`}
+          onClick={() => handleSlide("right")}
+        >
+          <img src={CaretRight} alt="next" />
+        </button>
       </section>
+
+      <FacultyModal
+        professor={selectedProfessor}
+        onClose={() => setSelectedProfessor(null)}
+        loadImage={loadImage}
+      />
     </section>
   );
 }

@@ -1,13 +1,39 @@
 import '../styles/Header.css';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import logo from "../assets/images/logo.png";
 import menuIcon from "../assets/svg/menu.svg";
 
 export default function Header() {
-  const [active, setActive] = useState('HOME');
+  const [active, setActive] = useState("");
   const [openMenu, setOpenMenu] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (
+      path === '/' ||
+      path === '/s202011341/2025' ||
+      path === '/s202011341/2025/'
+    ) {
+      setActive('HOME');
+    }
+  
+    else if (path === '/project') {
+      setActive('PROJECT');
+    } 
+    else if (path === '/department') {
+      setActive('DEPARTMENT INFO');
+    } 
+    else if (path === '/gallery') {
+      setActive('GALLERY');
+    } 
+    else if (path === '/guestbook') {
+      setActive('GUEST BOOK');
+    }
+  
+  }, [location.pathname]);
 
   const menuItems = [
     "HOME",
@@ -32,6 +58,7 @@ export default function Header() {
   return (
     <header className="Header">
       <div className="header-inner">
+
         <div className="logo">
           <img src={logo} alt="졸전로고" />
         </div>
@@ -51,6 +78,7 @@ export default function Header() {
         <button className="mobile-menu-btn" onClick={() => setOpenMenu(!openMenu)}>
           <img src={menuIcon} alt="menu" className="menu-icon" />
         </button>
+
       </div>
 
       {openMenu && (

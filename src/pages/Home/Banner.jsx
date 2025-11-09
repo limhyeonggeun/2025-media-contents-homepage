@@ -1,7 +1,7 @@
 import '../../styles/main/Banner.css';
 import { useEffect, useState } from 'react';
 import CaretDown from '../../assets/svg/CaretDown.svg';
-import BannerVideo from '../../assets/images/test.png'
+import BannerVideo from '../../assets/images/test.jpg'
 
 export default function Banner() {
   const [visible, setVisible] = useState(false);
