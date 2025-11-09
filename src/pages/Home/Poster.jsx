@@ -16,7 +16,7 @@ export default function Poster() {
           <div className="pster-line"></div>
 
           <div className="poster-desc">
-            <p>‘REWRITE’는 단순히 ‘다시 쓴다’는 행위를 넘어, ‘삶을 다시 바라보는 관점의 전환’을 의미합니다. ‘RE’는 다시(Again) 와 관점(Perspective) 을, ‘WRITE’는 기록하고 창조한다(Create & Record) 는 뜻을 가집니다. “A STORY OF OUR LIFE : REWRITE”는 정해진 결말이 아닌 ‘각자의 시선’으로 자신만의 이야기를 새롭게 구성하는 과정을 상징합니다. 이는 과거를 부정하는 것이 아니라, 현재의 시점에서 그 의미를 재해석하고 미래를 향해 새로운 서사를 써 내려가는 ‘시작점’이 됩니다.
+            <p>A STORY OF OUR LIFE : REWRITE는 단순히 다시 쓴다는 행위를 넘어, 삶을 다시 바라보는 관점의 전환을 의미한다. RE는 다시(Again)와 관점(Perspective)을, WRITE는 기록하고 창조한다(Create & Record)는 뜻을 가진다. A STORY OF OUR LIFE : REWRITE는 정해진 결말이 아닌 각자의 시선으로 자신만의 이야기를 새롭게 구성하는 과정을 상징한다. 이는 과거를 부정하는 것이 아니라, 현재의 시점에서 그 의미를 재해석하고 미래를 향해 새로운 서사를 써 내려가는 시작점이 된다.
             </p>
           </div>
 

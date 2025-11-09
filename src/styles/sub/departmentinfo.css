@@ -343,10 +343,9 @@
   .core-row {
     background-size: 16rem 16rem;
     flex-direction: row;
-    width: 100%;
+    width: fit-content;
     margin: 0;
-    transform: translateX(1rem);
-    background-position: calc(50% - 1rem) center;
+    display: inline-flex;
   }
 
   .core-row > *:not(:first-child) {

@@ -368,12 +368,15 @@
     flex-direction: column;
     align-items: center;
   }
-
+  .modal-panel-wrap{
+    max-height: none;
+  }
   .modal-panel-wrap,
   .modal-video-wrap {
     width: 100%;
     margin-top: 1.6rem;
     height: auto;
+    overflow-y: hidden;
   }
 
   .modal-panel-img {

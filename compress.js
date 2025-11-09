@@ -2,52 +2,43 @@ const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
 
-const MEMBERS_DIR = path.join(__dirname, "src/assets/images/members");
+// ✅ 압축할 단일 파일 경로
+const TARGET_FILE = path.join(
+  __dirname,
+  "src/assets/images/productmanager/choieunbin/panel-img-min.jpg"
+);
 
+// ✅ 임시 출력 파일(.tmp)
+const TEMP_FILE = TARGET_FILE + ".tmp";
+
+// ✅ JPG 옵션 (700KB대 목표)
 const jpgOptions = {
   quality: 70,
   mozjpeg: true,
 };
 
-async function compressAndRenameMembers() {
-  if (!fs.existsSync(MEMBERS_DIR)) {
-    console.log("❌ members 폴더가 존재하지 않습니다:", MEMBERS_DIR);
+async function compressPanel() {
+  if (!fs.existsSync(TARGET_FILE)) {
+    console.log("❌ 파일이 존재하지 않습니다:", TARGET_FILE);
     return;
   }
 
-  let files = fs
-    .readdirSync(MEMBERS_DIR)
-    .filter((f) => /\.(png|jpe?g)$/i.test(f))
-    .sort(); // 문자 정렬
+  try {
+    console.log("🔧 압축 시작:", TARGET_FILE);
 
-  if (files.length === 0) {
-    console.log("❌ 변환할 멤버 이미지가 없습니다.");
-    return;
+    // ✅ 재압축
+    await sharp(TARGET_FILE)
+      .jpeg(jpgOptions)
+      .toFile(TEMP_FILE);
+
+    // ✅ 기존 파일 삭제 & 교체
+    fs.unlinkSync(TARGET_FILE);
+    fs.renameSync(TEMP_FILE, TARGET_FILE);
+
+    console.log("✅ panel-img-min.jpg 재압축 완료!");
+  } catch (err) {
+    console.log("❌ 압축 실패:", err.message);
   }
-
-  console.log(`총 ${files.length}개의 멤버 이미지 변환 시작…`);
-
-  let index = 1;
-
-  for (const file of files) {
-    const inputFile = path.join(MEMBERS_DIR, file);
-    const outputFile = path.join(MEMBERS_DIR, `${index}.jpg`);
-
-    try {
-      await sharp(inputFile).jpeg(jpgOptions).toFile(outputFile);
-
-      console.log(`✅ ${file} → ${index}.jpg 완료`);
-
-      // 기존 파일 삭제
-      fs.unlinkSync(inputFile);
-    } catch (err) {
-      console.log(`❌ 변환 실패: ${file}`, err.message);
-    }
-
-    index++;
-  }
-
-  console.log("🎉 members 폴더 JPG 압축 + 재정렬 완료!");
 }
 
-compressAndRenameMembers();
+compressPanel();
