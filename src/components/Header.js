@@ -1,7 +1,7 @@
 import '../styles/Header.css';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import logo from "../assets/images/logo.png";
+import logo from "../assets/svg/logo.svg";
 import menuIcon from "../assets/svg/menu.svg";
 
 export default function Header() {
@@ -10,30 +10,22 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const base = process.env.PUBLIC_URL || "";
+
   useEffect(() => {
-    const path = location.pathname;
-    if (
-      path === '/' ||
-      path === '/s202011341/2025' ||
-      path === '/s202011341/2025/'
-    ) {
-      setActive('HOME');
+    let path = location.pathname;
+
+    if (path.startsWith(base)) {
+      path = path.replace(base, "") || "/";
     }
-  
-    else if (path === '/project') {
-      setActive('PROJECT');
-    } 
-    else if (path === '/department') {
-      setActive('DEPARTMENT INFO');
-    } 
-    else if (path === '/gallery') {
-      setActive('GALLERY');
-    } 
-    else if (path === '/guestbook') {
-      setActive('GUEST BOOK');
-    }
-  
-  }, [location.pathname]);
+
+    if (path === "/") setActive("HOME");
+    else if (path === "/project") setActive("PROJECT");
+    else if (path === "/department") setActive("DEPARTMENT INFO");
+    else if (path === "/gallery") setActive("GALLERY");
+    else if (path === "/guestbook") setActive("GUEST BOOK");
+
+  }, [location.pathname, base]);
 
   const menuItems = [
     "HOME",
@@ -48,11 +40,11 @@ export default function Header() {
     setOpenMenu(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    if (item === "HOME") navigate("/");
-    if (item === "PROJECT") navigate("/project");
-    if (item === "DEPARTMENT INFO") navigate("/department");
-    if (item === "GALLERY") navigate("/gallery");
-    if (item === "GUEST BOOK") navigate("/guestbook");
+    if (item === "HOME") navigate(`${base}/`);
+    if (item === "PROJECT") navigate(`${base}/project`);
+    if (item === "DEPARTMENT INFO") navigate(`${base}/department`);
+    if (item === "GALLERY") navigate(`${base}/gallery`);
+    if (item === "GUEST BOOK") navigate(`${base}/guestbook`);
   };
 
   return (

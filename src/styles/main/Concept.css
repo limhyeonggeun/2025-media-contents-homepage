@@ -1,7 +1,8 @@
 .concept {
   position: relative;
   overflow: hidden;
-  height: 135rem;
+  height: auto;
+  margin-bottom: 18rem;
 }
 
 .concept-line-wrap {
@@ -94,17 +95,17 @@
 .concept-desc p {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: var(--text-primary);
   display: inline-block;
   margin-bottom: 1.8rem;
-  line-height: 5.8rem;
 }
 
 
 @media (max-width: 600px) {
   .concept {
-    height: 60rem;
+    height: auto;
+    margin-bottom: 6rem;
   }
 
   .concept-line {

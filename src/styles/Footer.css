@@ -59,6 +59,7 @@
 
 .footer-logo img {
   margin-top: 6.4rem;
+  height: 4.4rem;
 }
 
 @media (max-width: 600px) {
@@ -113,8 +114,8 @@
   }
 
   .footer-logo img {
-    margin-top: 0;
-    width: 6rem;
+    margin-top: 0 ;
+    width: 4rem;
     height: auto;
   }
 }
