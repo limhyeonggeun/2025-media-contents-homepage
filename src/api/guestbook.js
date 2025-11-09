@@ -12,11 +12,14 @@ export async function listGuestbook({ limit = 20, cursor } = {}) {
   ensureEnv();
   const params = new URLSearchParams();
   params.set("select", "id,to,message,from,created_at");
-  params.set("order", "created_at.desc");
+  // Put null created_at values last so newest entries appear first
+  params.set("order", "created_at.desc.nullslast");
   params.set("limit", String(limit));
   if (cursor) {
-    // keyset pagination using created_at (do NOT double-encode)
-    params.set("created_at", `lt.${cursor}`);
+    // Include rows where created_at is null, plus those older than cursor
+    // PostgREST 'or' filter: or=(cond1,cond2)
+    // See: https://postgrest.org/en/stable/references/api/tables_views.html#or
+    params.set("or", `(created_at.is.null,created_at.lt.${cursor})`);
   }
 
   const url = `${BASE}/rest/v1/guestbook?${params.toString()}`;
@@ -25,6 +28,7 @@ export async function listGuestbook({ limit = 20, cursor } = {}) {
       apikey: ANON,
       Authorization: `Bearer ${ANON}`,
       Accept: "application/json",
+      Prefer: "count=exact"
     },
   });
   if (!res.ok) {
