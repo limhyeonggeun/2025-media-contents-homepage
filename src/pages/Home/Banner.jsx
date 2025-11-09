@@ -1,7 +1,7 @@
 import '../../styles/main/Banner.css';
 import { useEffect, useState } from 'react';
 import CaretDown from '../../assets/svg/CaretDown.svg';
-import BannerVideo from '../../assets/images/test.jpg'
+import BannerVideo from '../../assets/videos/main_bg.mp4'
 
 export default function Banner() {
   const [visible, setVisible] = useState(false);
@@ -17,15 +17,14 @@ export default function Banner() {
 
   return (
     <section className={`Banner ${visible ? 'show' : ''}`}>
-      <img src={BannerVideo} alt="scroll arrow" className='banner-video' />
-      {/* <video
+      <video
         className="banner-video"
         src={BannerVideo}
         autoPlay
         loop
         muted
         playsInline
-      /> */}
+      />
 
       <div className="banner-overlay">
         <div>
