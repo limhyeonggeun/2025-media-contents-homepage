@@ -10,22 +10,15 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const base = process.env.PUBLIC_URL || "";
-
   useEffect(() => {
-    let path = location.pathname;
-
-    if (path.startsWith(base)) {
-      path = path.replace(base, "") || "/";
-    }
+    const path = location.pathname;
 
     if (path === "/") setActive("HOME");
-    else if (path === "/project") setActive("PROJECT");
-    else if (path === "/department") setActive("DEPARTMENT INFO");
-    else if (path === "/gallery") setActive("GALLERY");
-    else if (path === "/guestbook") setActive("GUEST BOOK");
-
-  }, [location.pathname, base]);
+    if (path === "/project") setActive("PROJECT");
+    if (path === "/department") setActive("DEPARTMENT INFO");
+    if (path === "/gallery") setActive("GALLERY");
+    if (path === "/guestbook") setActive("GUEST BOOK");
+  }, [location.pathname]);
 
   const menuItems = [
     "HOME",
@@ -40,11 +33,11 @@ export default function Header() {
     setOpenMenu(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    if (item === "HOME") navigate(`${base}/`);
-    if (item === "PROJECT") navigate(`${base}/project`);
-    if (item === "DEPARTMENT INFO") navigate(`${base}/department`);
-    if (item === "GALLERY") navigate(`${base}/gallery`);
-    if (item === "GUEST BOOK") navigate(`${base}/guestbook`);
+    if (item === "HOME") navigate("/");
+    if (item === "PROJECT") navigate("/project");
+    if (item === "DEPARTMENT INFO") navigate("/department");
+    if (item === "GALLERY") navigate("/gallery");
+    if (item === "GUEST BOOK") navigate("/guestbook");
   };
 
   return (
