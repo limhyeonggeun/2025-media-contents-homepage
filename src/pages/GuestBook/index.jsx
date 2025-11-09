@@ -9,6 +9,11 @@ export default function GuestBook() {
   const [error, setError] = useState('');
   const topCreatedRef = useRef(null);
   const timerRef = useRef(null);
+  const moreRef = useRef(null);
+  const bottomCursorRef = useRef(null);
+  const loadingMoreRef = useRef(false);
+  const [hasMore, setHasMore] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
 
   // Keep ref in sync with newest item's created_at
   useEffect(() => {
@@ -22,9 +27,11 @@ export default function GuestBook() {
       setLoading(true);
       setError('');
       try {
-        const { items: rows } = await listGuestbook({ limit: 50 });
+        const { items: rows, nextCursor } = await listGuestbook({ limit: 200 });
         if (!mounted) return;
         setItems(rows);
+        bottomCursorRef.current = nextCursor;
+        setHasMore(Boolean(nextCursor));
       } catch (e) {
         if (!mounted) return;
         setError(e?.message || '불러오기 실패');
@@ -37,7 +44,6 @@ export default function GuestBook() {
 
   // Poll for new entries and prepend
   useEffect(() => {
-    // start a single interval
     if (timerRef.current) return;
     timerRef.current = setInterval(async () => {
       const since = topCreatedRef.current;
@@ -45,7 +51,6 @@ export default function GuestBook() {
       try {
         const { items: newer } = await listGuestbookSince({ since, limit: 50 });
         if (newer && newer.length > 0) {
-          // newer is ascending; reverse then prepend to keep descending order
           setItems((prev) => [...newer.slice().reverse(), ...prev]);
         }
       } catch (e) {
@@ -59,6 +64,56 @@ export default function GuestBook() {
       }
     };
   }, []);
+
+  // Infinite scroll: observe sentinel at the bottom to load older items
+  useEffect(() => {
+    if (!moreRef.current) return;
+    const el = moreRef.current;
+    const io = new IntersectionObserver(async (entries) => {
+      const entry = entries[0];
+      if (!entry.isIntersecting) return;
+      if (loadingMoreRef.current) return;
+      if (!hasMore) return;
+      const cursor = bottomCursorRef.current;
+      if (!cursor) return;
+      loadingMoreRef.current = true;
+      try {
+        const { items: rows, nextCursor } = await listGuestbook({ limit: 100, cursor });
+        if (rows && rows.length) {
+          setItems((prev) => [...prev, ...rows]);
+        }
+        bottomCursorRef.current = nextCursor;
+        setHasMore(Boolean(nextCursor));
+      } catch (e) {
+        setError(e?.message || '추가 로드 실패');
+      } finally {
+        loadingMoreRef.current = false;
+      }
+    }, { rootMargin: '200px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [hasMore]);
+
+  // Manual load more (button)
+  const loadMore = async () => {
+    if (loadingMore) return;
+    if (!hasMore) return;
+    const cursor = bottomCursorRef.current;
+    if (!cursor) return;
+    setLoadingMore(true);
+    try {
+      const { items: rows, nextCursor } = await listGuestbook({ limit: 100, cursor });
+      if (rows && rows.length) {
+        setItems((prev) => [...prev, ...rows]);
+      }
+      bottomCursorRef.current = nextCursor;
+      setHasMore(Boolean(nextCursor));
+    } catch (e) {
+      setError(e?.message || '추가 로드 실패');
+    } finally {
+      setLoadingMore(false);
+    }
+  };
 
   return (
     <section className="page-container">
@@ -93,6 +148,14 @@ export default function GuestBook() {
 
         {loading && <p style={{ marginTop: '1rem' }}>불러오는 중...</p>}
         {error && <p style={{ color: 'red', marginTop: '1rem' }}>{error}</p>}
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16 }}>
+          {hasMore && (
+            <button onClick={loadMore} disabled={loadingMore}>
+              {loadingMore ? '불러오는 중...' : '더 보기'}
+            </button>
+          )}
+        </div>
+        <div ref={moreRef} style={{ height: 1 }} />
       </div>
     </section>
   );

@@ -15,8 +15,8 @@ export async function listGuestbook({ limit = 20, cursor } = {}) {
   params.set("order", "created_at.desc");
   params.set("limit", String(limit));
   if (cursor) {
-    // keyset pagination using created_at
-    params.set("created_at", `lt.${encodeURIComponent(cursor)}`);
+    // keyset pagination using created_at (do NOT double-encode)
+    params.set("created_at", `lt.${cursor}`);
   }
 
   const url = `${BASE}/rest/v1/guestbook?${params.toString()}`;
@@ -44,7 +44,7 @@ export async function listGuestbookSince({ since, limit = 50 } = {}) {
   params.set("select", "id,to,message,from,created_at");
   params.set("order", "created_at.asc");
   params.set("limit", String(limit));
-  params.set("created_at", `gt.${encodeURIComponent(since)}`);
+  params.set("created_at", `gt.${since}`);
 
   const url = `${BASE}/rest/v1/guestbook?${params.toString()}`;
   const res = await fetch(url, {

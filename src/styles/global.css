@@ -50,7 +50,7 @@
   --bg-light: #ffffff;
 
   /* 포인트 색상 */
-  --accent-main: #44FF00;
+  --accent-main: #E7F311 ;
 
   /* 구분선 */
   --line-main: #E5E5E5;
@@ -86,4 +86,19 @@ body {
   width: 128rem;
   margin-top: 10rem;
   padding: 8rem 0 14rem;
+}
+
+@media (max-width: 1280px) {
+  .page-inner {
+    width: 100%;
+    padding: 6rem 0rem 0rem; 
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-inner {
+    margin-top: 6rem;
+    padding: 4rem 0rem 0rem;
+  }
 }
