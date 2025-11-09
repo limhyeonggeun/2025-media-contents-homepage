@@ -1,7 +1,19 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "../../styles/sub/gallery.css";
 
 export default function Gallery() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 700px)');
+    const onChange = () => setIsMobile(mq.matches);
+    onChange();
+    if (mq.addEventListener) mq.addEventListener('change', onChange);
+    else mq.addListener(onChange);
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener('change', onChange);
+      else mq.removeListener(onChange);
+    };
+  }, []);
   // Load all images from the gallery folder
   const images = useMemo(() => {
     try {
@@ -101,10 +113,34 @@ export default function Gallery() {
     if (id === "C") return <BlockC key="C" />;
   };
 
+  const renderMobile = () => {
+    const nodes = [];
+    // Avoid relying on slotIndex (it increments during render).
+    // Instead, loop by how many items the pattern consumes (1 + 2 = 3).
+    let idx = 0;
+    while (idx < photos.length) {
+      nodes.push(
+        <div className="row" key={`mw-${idx}`}>
+          <PhotoBox size="wide" />
+        </div>
+      );
+      nodes.push(
+        <div className="row mobile-two" key={`m2-${idx}`}>
+          <PhotoBox size="small" />
+          <PhotoBox size="small" />
+        </div>
+      );
+      idx += 3; // this pattern consumes up to 3 photos per cycle
+    }
+    return nodes;
+  };
+
   return (
     <section className="page-container">
       <div className="page-inner gallery-inner">
-        {(() => {
+        {isMobile ? (
+          renderMobile()
+        ) : (() => {
           const groupSize = pattern === "center" ? 8 : 7; // photos consumed per A+B+C
           const groups = Math.max(1, Math.ceil(photos.length / groupSize));
           return Array.from({ length: groups }).map((_, i) => (

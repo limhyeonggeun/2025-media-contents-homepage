@@ -131,3 +131,11 @@
   .lightbox-btn.next { right: 0.5rem; }
   .lightbox-close { top: 0.5rem; right: 0.5rem; }
 }
+
+/* Mobile pattern: 1 wide (full width) then 2 small side-by-side */
+@media (max-width: 700px) {
+  .row { gap: 1.2rem; }
+  .row.mobile-two { flex-direction: row; }
+  .row.mobile-two .gallery-item.small { width: calc((100% - 1.2rem) / 2); height: 22rem; }
+  .gallery-item.wide { height: 22rem; }
+}
