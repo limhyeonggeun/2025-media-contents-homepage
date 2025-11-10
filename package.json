@@ -2,7 +2,7 @@
   "name": "2025-media-contents-homepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://media.seowon.ac.kr/s202011341/2025/",
+  "homepage": "https://media.seowon.ac.kr/2025/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",

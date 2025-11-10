@@ -196,6 +196,12 @@
     align-items: flex-start;
   }
 
+  .scroll-area {
+    overflow-y: auto;
+    padding-bottom: 3rem;
+    padding-right: 0;
+  }
+  
   .faculty-modal-contact p {
     justify-content: flex-start;
   }
@@ -203,17 +209,18 @@
   .faculty-modal-right {
     width: 100%;
     max-height: none;
-    padding-right: 0.6rem;
+    padding-right: 0;
   }
 
   .faculty-modal-title {
     font-size: 1.4rem;
     padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
   }
 
   .faculty-modal-message {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    padding: 0.5rem 0;
+    padding: 0;
   }
 }
