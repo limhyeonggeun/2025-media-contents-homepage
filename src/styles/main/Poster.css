@@ -61,11 +61,13 @@
 
 .poster-desc {
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2.2rem;
   line-height: 3.2rem;
   margin-bottom: 12rem;
   line-break: anywhere;
+  text-align: justify;          
+  text-justify: inter-word;     
 }
 
 .poster-footer {

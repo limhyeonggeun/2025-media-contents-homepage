@@ -39,8 +39,7 @@
 .dept-sub {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 2rem;
-  font-weight: 500;
-  color: var(--text-secondary);
+  font-weight: 600;
   margin-bottom: 7rem;
 }
 
@@ -79,12 +78,14 @@
   font-weight: 500;
   font-size: 3.6rem;
   color: var(--accent-main);
+  margin-bottom: 0.5rem;
 }
 
 .core-circle .en {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.6rem;
-  opacity: 0.7;
+  font-family: "Paperlogy", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.6;
 }
 
 .core-row {
@@ -119,7 +120,7 @@
 }
 
 .center-title {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Paperlogy", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   position: relative;

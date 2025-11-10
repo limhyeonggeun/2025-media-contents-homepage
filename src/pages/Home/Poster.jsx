@@ -10,7 +10,7 @@ export default function Poster() {
         </div>
 
         <div className="poster-right">
-          <h1 className="poster-title">MAKE RE: REWRITE</h1>
+          <h1 className="poster-title">MAKE  <span> RE:</span> REWRITE</h1>
           <p className="poster-subtitle">A STORY OF OUR LIFE : REWRITE </p>
 
           <div className="pster-line"></div>
@@ -23,7 +23,7 @@ export default function Poster() {
           <div className="poster-footer">
             <p>2025 서원대학교 미디어콘텐츠학과 졸업전시회</p>
             <p>2025 SWU MEDIA CONTENTS EXHIBITION</p>
-            <p>SEWON UNIVERSITY, 2025</p>
+            <p>SEOWON UNIVERSITY, 2025</p>
           </div>
         </div>
       </div>

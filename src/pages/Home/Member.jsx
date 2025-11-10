@@ -155,10 +155,11 @@ export default function Member() {
         </p>
       </div>
 
-      <div
-        className={`member-carousel ${isMobile ? "mobile" : ""}`}
-        ref={carouselRef}
-      >
+      <div className="member-carousel-wrapper">
+        <div
+          className={`member-carousel ${isMobile ? "mobile" : ""}`}
+          ref={carouselRef}
+        >
         {images.map((img, i) => {
           if (isMobile) {
             return (
@@ -200,6 +201,7 @@ export default function Member() {
             </div>
           );
         })}
+      </div>
       </div>
     </section>
   );

@@ -5,14 +5,14 @@
   align-items: center;
   justify-content: start;
   gap: 4rem;
-  height: auto;
+  height: auto; 
   margin-bottom: 10rem;
 }
 
 .member-header {
   text-align: center;
   margin-top: 8.5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 7rem;
 }
 
 .member-header-icon {
@@ -34,13 +34,20 @@
   color: var(--text-tertiary);
 }
 
+.member-carousel-wrapper {
+  width: 100%;
+  height: 54rem;
+  overflow-x: hidden;    
+  position: relative;
+}
+
 .member-carousel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30rem;
+  height: 100%;
   margin: 0 auto;
   perspective: 1800px;
   transform-style: preserve-3d;

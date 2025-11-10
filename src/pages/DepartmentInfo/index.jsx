@@ -69,7 +69,7 @@ export default function DepartmentInfo() {
           </div>
 
           <div className="core-row">
-            <div className="core-center"><p className="center-title">브랜딩 마케팅</p></div>
+            <div className="core-center"><p className="center-title">브랜드 마케팅</p></div>
             <div className="core-center"><p className="center-title">공통영역</p></div>
             <div className="core-center"><p className="center-title">기획설계</p></div>
           </div>
