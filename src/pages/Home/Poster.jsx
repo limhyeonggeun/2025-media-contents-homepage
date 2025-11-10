@@ -10,7 +10,7 @@ export default function Poster() {
         </div>
 
         <div className="poster-right">
-          <h1 className="poster-title">MAKE RE:REWRITE</h1>
+          <h1 className="poster-title">MAKE RE: REWRITE</h1>
           <p className="poster-subtitle">A STORY OF OUR LIFE : REWRITE </p>
 
           <div className="pster-line"></div>
