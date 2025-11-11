@@ -16,8 +16,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/9dTtJ-iQW1U?si=-Pz3GnYt4pZ0bWqk",  
+        intro: "https://youtu.be/5-Dc0p4-91A?si=FrLZ0SYFGJSVmOyH",        
       },
     
       about: "최근 테마파크 산업은 IP와 디지털 융합을 통한 몰입 경험이 핵심 경쟁력으로 부상하고 있습니다. 이에 에버랜드는 단순 예매 중심 구조에서 벗어나, 방문 전부터 후까지 이어지는 고객 여정을 통합 관리하는 플랫폼으로 전환하여, 이를 통해 이용 편의성과 브랜드 일관성을 강화하고, 지속적으로 확장 가능한 디지털 경험을 실현하고자 합니다. ",
@@ -41,8 +41,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/JLWxFS7P03g?si=EHKmhPbUIRqCSqnC",  
+        intro: "https://youtu.be/QbK6Nj0AIIY?si=s3lp8DiGvokItbLJ",        
       },
     
       about: "NH농협은행은 15~39세 대상 조사에서 타 금융권보다 높은 브랜드 신뢰도를 보이며, 세대가 달라져도 변함없이 ‘신뢰할 수 있는 금융 브랜드’로 인식됩니다. 이러한 안정성과 투명한 운영을 기반으로, 변화하는 금융 환경 속에서도 일관된 가치와 사용자 중심 철학을 유지하며, 신뢰를 토대로 한 ‘안전한 혁신’을 통해 새로운 세대가 공감할 수 있는 디지털 금융 경험을 제안합니다.",
@@ -66,8 +66,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/bYxn1QUr3DY?si=Y1qwleW-SiFBGAr2",  
+        intro: "https://youtu.be/xHhP-HdeRQs?si=b6MKO4uaxmfKXRZ1",        
       },
     
       about: "InBody는 단순한 신체 측정을 넘어, 개인의 데이터를 중심으로 전방위적 건강 행동을 설계하는 플랫폼으로 확장하고자 합니다. AI 분석을 통해 체성분 변화와 생활 루틴을 연결하고, 사용자가 목표를 설정하며 성장하는 자율형 헬스케어 경험을 제공합니다. 데이터 기반의 인사이트와 맞춤 피드백을 지속 가능한 웰니스로 완성하는 사용자 중심 헬스케어 플랫폼을 제안합니다.",
@@ -92,8 +92,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "",  
+        intro: "https://youtu.be/3SHyWFFEeiw?si=8UoWcwY2_jFolYxB",        
       },
     
       about: "다양한 카테고리와 방대한 상품정보로 인해 사용자가 원하는 정보를 한눈에 파악하기 어려운 한계가 존재, 이에따라 사용자가 더쉽고 직관적으로 앱을 탐색할수 있는 환경을 제공하고자 합니다. 맞춤형 추천 등의 기능을 강화해 사용자 제공 특히 단순하고 명확한 UX를 중심으로한 화면 구성, 그리고 빠른검색과 구매 가 가능한 플로우구축을 제안합니다.",
@@ -117,8 +117,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/vtV-I4mpIkw?si=PjGBwvyA4pkqvehD",  
+        intro: "https://youtu.be/4N4r7gkMyjY?si=HXlzCDkqBA6NAZ9A",        
       },
     
       about: "보험의 디지털 전환 흐름과 사용자 경험 변화를 기반으로, 웹 앱 통합 리뉴얼을 제시합니다. 데이터 중심의 개인화, 오픈파이낸스, AI 기반 보험 관리 자동화를 통해 사용자가 스스로 활용할 수 있는 환경을 제공합니다. 예측성, 연속성, 맞춤성의 전략으로 보험의 처음부터 끝까지 끊김없는 경험을 제공해 신뢰와 혁신의 가치를 담은 차세대 인슈어 테크 플랫폼을 제안합니다.",
@@ -142,8 +142,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/k4bQwFzX80U?si=1jvckFQkylmqjPBJ",  
+        intro: "https://youtu.be/g09e6yo1pIU?si=ww_5juC5QDSDQhBV",        
       },
     
       about: "현대백화점은 온·오프라인을 넘나드는 고객 여정에 맞춰, 오프라인 중심 경험만으로는 기대를 충족하기 어려운 시점에 이르렀습니다. 고객은 정보 탐색을 넘어 몰입감 있는 콘텐츠와 개인화된 환경을 원하고 있습니다. 이에 디지털 환경에서도 일관된 브랜드 경험을 제공하며, 온·오프라인을 아우르는 통합 UX로 지속적인 교감을 형성하는 차별화된 쇼핑 플랫폼을 제안합니다.",
@@ -167,8 +167,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/9CRI9VXKT-M?si=YAJ52QQd1l5XtEVg",  
+        intro: "https://youtu.be/5J4ifzarK_Y?si=qjJzGywAhvaEl-y6",        
       },
     
       about: "KB Pay는 개인의 요구와 선호를 충족시키는 AI 기반 맞춤형 서비스의 중요성이 커지고 있는 흐름에 맞춰, AI 기술을 중심으로 한 초개인화 서비스와 결제 프로세스 최적화를 통해 사용자에게 빠르고 간편한 결제 경험 제공하며 나아가 사용자 중심의 직관적 결제 경험을 구현함으로써, 금융 생활의 새로운 기준을 제시하는 4세대 간편결제 플랫폼으로의 도약을 제안합니다.",
@@ -192,8 +192,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/3zoj9PTbego?si=WfKKUMXdnoCL5dZK",  
+        intro: "https://youtu.be/gUXtD-QCMc8?si=3RGjS1kRdimW-qLG",        
       },
     
       about: "11번가는 AI 기반 개인화 큐레이션과 실시간 데이터 분석을 결합한 몰입형 커머스 플랫폼으로, 사용자의 취향과 맥락을 이해하여 상황별 맞춤형 쇼핑 경험을 제공한다. 본 리뉴얼은 앱과 웹의 연동성을 강화하고, 콘텐츠 중심의 탐색 구조와 AI 리뷰 요약, 쇼핑 어시스턴트 기능을 통해 탐색 효율과 브랜드 경험을 동시에 향상시키는 차세대 개인화 커머스 플랫폼을 제안합니다.",
@@ -217,8 +217,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/sCM2J92XC-U?si=wMraGgiLtoQwjbal",  
+        intro: "https://youtu.be/4wAQuWlZAQ8?si=bVP8jnqBwGnU8sMm",        
       },
     
       about: "현재 KB국민은행은 디지털 금융 환경 변화에 따라 기능 중심의 단편적 서비스 제공을 넘어서야 합니다. 사용자에게 편리한 기능성, 누구나 쉽게 접근 가능한 구조, 반복 사용을 유도하는 편리한 사용성을 재정비하고, 데이터 기반의 개인화된 콘텐츠를 강화해야 합니다. 기능, 접근, 사용 측면에서 모두 뛰어난 사용자 중심 디지털 금융 플랫폼으로의 전환을 제안합니다.",
@@ -242,8 +242,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/ntY3jsqED60?si=UM4kUbfCZVrDPjeO",  
+        intro: "https://youtu.be/ftLOZ2ZR8NU?si=CF5MGSSbUWEa0Wp-",        
       },
     
       about: "현재 식품·헬스케어 시장은 개인 맞춤형 서비스와 데이터 기반 통합 플랫폼으로 빠르게 전환되고 있습니다. 풀무원은 건강 데이터와 소비 데이터를 연결해 사용자의 일상 속 지속 가능한 루틴을 완성하는 라이프케어 커머스 플랫폼으로 도약합니다. 개인화된 피드백과 통합 UX를 통해 브랜드 신뢰와 이용 지속성을 강화할 수 있는 방향을 제안합니다.",
@@ -267,8 +267,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/i9uq6CkVPd4?si=JeHA_2kgN-_ALx_P",  
+        intro: "https://youtu.be/zfZJKrxCVTI?si=HZIae4Uja-dGaE-d",        
       },
     
       about: "간편결제의 확산과 디지털 금융의 일상화로 결제 경험의 중심이 빠르게 변화하고 있습니다. 사용자는 단순한 결제를 넘어 소비 패턴에 맞춘 개인화된 금융 경험을 기대하고 있습니다. 이에 AI와 데이터 분석을 기반으로 한 초개인화 서비스를 도입하고, 보다 직관적이고 편리한 흐름으로 금융 여정을 재구성하는 UX/UI 리뉴얼 방향을 제안합니다.",
@@ -293,8 +293,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/nFtZOK6uhUs?si=V2oPDo4hIy1yJA8n",  
+        intro: "https://youtu.be/wOwEjGzoxGo?si=ShX26ew4DgBZinri",        
       },
     
       about: "하나투어는 여행의 탐색–비교–예약–여행 중을 하나의 흐름으로 연결하는 개인화 기반 여행 서비스로의 전환이 필요합니다. 카드형 정보 구조와 상단 고정 내비게이션으로 탐색 시간을 줄이고,통합 프로필, 실시간 데이터를 기반으로 알림들을 자동 연동 하며, 여행중 홈과 AI 기반 추천으로 상황에 맞는 일정과 정보를 제공하는 사용자 중심 여행 경험을 제안합니다.",
@@ -318,8 +318,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/v-AIgmf3q4I?si=pa_h8tPWXsbB19il",  
+        intro: "https://youtu.be/1onZDQsrtKA?si=pwhzEeaZucLBWRWk",        
       },
     
       about: "복합문화공간 시장은 경험 중심 소비와 디지털 전환이 확산되며, 고객은 여가·쇼핑·체험을 하나로 연결한 몰입형 서비스를 기대합니다. 이에 스타필드는 AI 개인화 서비스와 O4O 전략을 통해 방문 전·중·후를 잇는 끊김 없는 여정과 맞춤형 체류 경험을 제공하며, 사용자 행동과 관심에 따라 유동적으로 변화하는 고객 중심 디지털 플랫폼을 제안합니다.",
@@ -343,8 +343,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/gjOYRLtpnLg?si=AibkW59pMgLL-QUQ",  
+        intro: "https://youtu.be/Ig2CtRz76LI?si=ra778pwCjIBnAw4I",        
       },
     
       about: "한샘은 가구판매 중심의 구조를 넘어,AI기반의 개인화 케어 리포트 서비스로 진화 하는 생활관리형 브랜드로 전환 하고 이를 위해 통합UX 데이터 활용, 지속가능성 강화가 핵심 전략 방향이 되어야 하고 가구,인테리어 공급을 넘어,고객의삶의 질을 높이는 라이프 스타일 플랫폼으로 확고히 자리 매김할 것으로 전망하고 제안하고자 합니다.",
@@ -368,8 +368,8 @@ export const members = [
       },
     
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/FgtPIlp5gAk?si=ON8C0SRl9Gmx8lha",  
+        intro: "https://youtu.be/85qRWB4UIOk?si=Lkmj6RHG2LWZA2FT",        
       },
     
       about: "우리은행이 개인의 금융 소비 경험을 단순한 거래를 넘어, 일상과 금융이 유기적으로 연결된 지속 가능한 서비스를 위해 맞춤형 정보 제공과 전문성 기반의 금융 서비스를 제공할 수 있도록 하였습니다. 이로써 편리하고 효율적인 금융•일상생활 경험을 제공함과 동시에 지속적인 금융 서비스 사용을 유도할 수 있는 사용자 맞춤형 통합 금융 플랫폼으로의 진화를 제안합니다.",
@@ -393,8 +393,8 @@ export const members = [
       },
   
       links: {
-        presentation: "https://www.youtube.com/embed/xxxxx",  
-        intro: "https://www.youtube.com/embed/yyyyy",        
+        presentation: "https://youtu.be/r8CGPN-6D5I?si=PkNDNyalEMZg9SpJ",  
+        intro: "https://youtu.be/uuMSCsR_d8M?si=wSHf3i92dvx9Itny",        
       },
   
       about: "이동통신 시장은 최근 유심 사고로 인한 신뢰 적하를 겪으며 이용자들은 단순한 요금 관리보다 안전하고 신뢰할 수 있는 서비스 경험을 요구하고 있으며, 동시에 AI기술이 산업 전반의 핵심이 되어 통신 플랫폼은 이제 개인화·자동화 중심의 지능형 서비스로 전환되고 있습니다. 이에 LG U+는 AI와 보안 강화를 결합해 사용자 중심의 스마트 통신 경험 플랫폼을 제안합니다.",
@@ -419,8 +419,7 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        intro: "https://youtu.be/vbiKzKdyjdY?si=YeNgGATfB4sYOfr5",
       },
   
       about:
@@ -446,8 +445,7 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://youtu.be/Wx9WbNkL2oY?si=kd4FMdVQrkJCQUzu",
+        intro: "https://youtu.be/AkpNSW478Aw?si=qQs8MXFbm5V2s2Xm",
       },
   
       about:
@@ -480,7 +478,7 @@ export const members = [
           phone: "010-8993-0728",
           email: "dndb0728@gmail.com",
           profile: "developer/lockon/profile-hyunbin.png",
-          intro: "https://www.youtube.com/embed/YYYYY"
+          intro: "https://youtu.be/g10iLzk0Mrc?si=HSTKIQem7ClrZSwy"
         },
         {
           key: "giwon",
@@ -489,7 +487,7 @@ export const members = [
           phone: "010-2200-2833",
           email: "shion9910@naver.com",
           profile: "developer/lockon/profile-giwon.png",
-          intro: "https://www.youtube.com/embed/ZZZZZ"
+          intro: "https://youtu.be/YnjsK3atVCk?si=6kMSwCRg6bt8Ug6h"
         }
       ],
   
@@ -517,8 +515,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/cHjx8x9bVb4?si=uRVMoqI4e-Qla-eI",
+        intro: "https://youtu.be/GBzQE1JIOqg?si=l2HdFUtzo5AK580O",
       },
   
       about:
@@ -544,8 +542,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/czGeQ9Rz3Qw?si=RqbddrhjuSbdFgSx",
+        intro: "https://youtu.be/kk12NEijPzU?si=OwcRxt9cPc3nE7yJ",
       },
   
       about:
@@ -571,8 +569,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/xMqreEshKhw?si=VTlQfUMAJw4fDITi",
+        intro: "https://youtu.be/mstqKsfue3c?si=S918imGFurBRfqBg",
       },
   
       about:
@@ -599,8 +597,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/wOu7bPmd9XQ?si=ex3KAA0Ts46pEG4s",
+        intro: "https://youtu.be/uE7Lc9QLXo8?si=q67O_NcOWPxiy_y5",
       },
   
       about:
@@ -626,8 +624,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/hAGVvoXs6O8?si=Jp30gy4SeVV0uu_N",
+        intro: "https://youtu.be/j22XyKraxuk?si=wLoQ3X_zaC75RzyT",
       },
   
       about:
@@ -643,7 +641,7 @@ export const members = [
       category: "Video Producer",
       major: "Video Media",
   
-      name: "강지현",
+      name: "강지헌",
       role: "GS25",
       position: "영상 기획자",
   
@@ -654,12 +652,12 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/4uvTrVVMhPw?si=2oSn9q-UUE8bJDCv",
+        intro: "https://youtu.be/sWSJqUyyYtg?si=cJFL3y5B6G-tk7ez",
       },
   
       about:
-        "GS25는 GS리테일이 운영하는 국내 편의점 시장 브랜드 평판 1위 브랜드로, MZ세대를 타겟으로 트렌디한 이미지를 구축해왔다. 하지만 고객의 '선택 장애' 고민을 해결할 명확한 솔루션이 부족했다. 이에 '요원 GS'라는 위트 있는 캐릭터가 등장하고, '확실한 조합'을 추천하여 '실패 없는 만족'을 선사하는 브랜디드 코믹 드라마를 제안합니다.",
+        "GS25는 GS리테일이 운영하는 국내 편의점 시장 브랜드 평판 1위 브랜드로, MZ세대를 타겟으로 트렌디한 이미지를 구축해왔습니다. 하지만 고객의 '선택 장애' 고민을 해결할 명확한 솔루션이 부족하다고 느꼈습니다. 이에 '요원 GS'라는 위트 있는 캐릭터가 등장하고, '확실한 조합'을 추천하여 '실패 없는 만족'을 선사하는 브랜디드 코믹 드라마를 제안합니다.",
   
       phone: "010-8998-3871",
       email: "rkdwlgjs123@gmail.com",
@@ -681,8 +679,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/Y4gXkP-fBM8?si=W1TvO9kdC8W12TNM",
+        intro: "https://youtu.be/7yrS1DY8LUY?si=IaOPCSjdWX-_0hcW",
       },
   
       about:
@@ -708,8 +706,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/wFZ4-lLstco?si=QExXFzw8jQiNDLbU",
+        intro: "https://youtu.be/XutfYCEquC4?si=vz6uhQychynx7RZQ",
       },
   
       about:
@@ -735,8 +733,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/v8WRUnCFSxA?si=h-k40r4xBkaABhmj",
+        intro: "https://youtu.be/3qsyMkXg3go?si=GmyYXW8JQKAgH1og",
       },
   
       about:
@@ -762,8 +760,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/i5FavKld66s?si=nTHKqSlCw7RU17dB",
+        intro: "https://youtu.be/DV7mMOycwAk?si=urm21VGSPeeysefZ",
       },
   
       about:
@@ -789,8 +787,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/Cv58hGSzjko?si=LOvou1niLPOMDlGr",
+        intro: "https://youtu.be/1vC5h2tBK1Q?si=rCzav5vYfGh-3BI3",
       },
   
       about:
@@ -816,8 +814,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/RnqfvJZKgRo?si=wa57xipqhVp1VWV1",
+        intro: "https://youtu.be/2HRbLB9IVhw?si=bibQnv0k4XIoE3XK",
       },
   
       about:
@@ -843,8 +841,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/OBWaDO7zYu8?si=6DRy8bSBDG3_aq0N",
+        intro: "https://youtu.be/ooFXK7uJ2Do?si=vInS7zNimg8TWaS4",
       },
   
       about:
@@ -871,8 +869,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/hew_-HOxcr0?si=Nj7m5GnH0DR1_s8w",
+        intro: "https://youtu.be/K8jH9E52hvA?si=FMCPQI4x7FVmJg4j",
       },
   
       about:
@@ -898,8 +896,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/eJJ595cl7iw?si=SO6Nzx3vJoztG03H",
+        intro: "https://youtu.be/-99OQRLBZ1s?si=_7XH109jKH041zju",
       },
   
       about:
@@ -925,8 +923,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/sAyKUWT9dv4?si=7w600GzLtAaWzA0w",
+        intro: "https://youtu.be/ROkEIfMbLcQ?si=F4ocP0TK8fC-wBFY",
       },
   
       about:
@@ -952,8 +950,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/7G9WoeRMKl4?si=rmX7aP8Qp4QljeDs",
+        intro: "https://youtu.be/e_UuEdj4le0?si=RAEQpT5JJL4Nt8yW",
       },
   
       about:
@@ -980,8 +978,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/1kOPidI5zlQ?si=wNvIHD5OBhDa-lul",
+        intro: "https://youtu.be/kYCPSCVZh80?si=MuW2l0zuRHX9qj7g",
       },
   
       about:
@@ -1007,8 +1005,8 @@ export const members = [
       },
   
       links: {
-        presentation: "",
-        intro: "https://www.youtube.com/embed/BBBBB",
+        presentation: "https://youtu.be/9LDcuYmalJM?si=OiA9sL5gjeBe1AP9",
+        intro: "https://youtu.be/paAcSo48vZ4?si=nWZaBcBVzSFMarIm",
       },
   
       about:
