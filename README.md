@@ -22,11 +22,7 @@
 ## 기술 스택
 - **Frontend:** React, JavaScript, CSS
 - **Interaction:** IntersectionObserver, SVG Path Animation, 3D Transform
-- **Deploy:** Nginx Static Hosting (SPA 라우팅 적용)
+- **Deploy:** React 정적 빌드 결과물을 학교 웹 서버에 FileZilla로 업로드하여 제공 (정적 호스팅)
 
 ---
 
-## 실행 방법
-```bash
-npm install
-npm start
